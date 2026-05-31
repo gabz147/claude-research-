@@ -2,12 +2,12 @@
   "id": "TASK-0003",
   "priority": "HIGH",
   "status": "PENDING",
-  "description": "Research: identify 5 blue-ocean B2B contracting niches (low competition, clear buyer, recurring need, low capex). Full methodology, confidence-rated.",
+  "description": "Discovery cycle: surface + score 3-5 blue-ocean B2B opportunities (expensive, frequent, painful problems in target sectors) using templates/OPPORTUNITY.md. Score each 0-100 per opportunity-engine. Promote any >=80 to projects/. Log all to research/OPPORTUNITIES.md.",
   "dependencies": ["TASK-0002"],
   "created": "2026-05-31",
   "updated": "2026-05-31",
   "owner": "Researcher",
   "confidence": "MED",
   "effort": "M",
-  "notes": "First real research output. Write to research/TASK-0003-*.md, index in RESEARCH.md, summary to #research-feed."
+  "notes": "Follow prompts/opportunity-engine.md strictly: hunt expensive problems not AI use-cases; try to disprove each; post scored theses to #🏆-opportunities. Quality over quantity — one 85+ beats five 72s."
 }

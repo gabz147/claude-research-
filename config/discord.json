@@ -7,6 +7,7 @@
     "research":  { "name": "🔬-research-feed",  "id": "1510607332868886551" },
     "active":    { "name": "🎯-active-work",    "id": "1510607334542671924" },
     "completed": { "name": "✅-completed",      "id": "1510607336480313395" },
+    "opportunities": { "name": "🏆-opportunities", "id": "1510611646769397932" },
     "alerts":    { "name": "🚨-alerts",         "id": "1510607338434986126" },
     "daily":     { "name": "📅-daily-report",   "id": "1510607339961581702" }
   },

@@ -8,7 +8,7 @@
 |----|-----|--------|-------------|------|---------|---------|-------|------|--------|
 | TASK-0001 | HIGH | DONE | Build ARO platform (memory, recovery, queue, research engine, Discord, automation, docs) | — | 2026-05-31 | 2026-05-31 | Builder | HIGH | L |
 | TASK-0002 | HIGH | PENDING | Deploy: install systemd timer, run first supervised cycle, confirm Discord heartbeat | TASK-0001 | 2026-05-31 | 2026-05-31 | Recovery | HIGH | S |
-| TASK-0003 | HIGH | PENDING | Research cycle: map 5 blue-ocean B2B contracting niches (low competition, clear buyer, recurring need) | TASK-0002 | 2026-05-31 | 2026-05-31 | Researcher | MED | M |
+| TASK-0003 | HIGH | PENDING | Discovery cycle: surface + score 3–5 blue-ocean B2B opportunities (opportunity-engine), promote any ≥80 to projects/ | TASK-0002 | 2026-05-31 | 2026-05-31 | Researcher | MED | M |
 | TASK-0004 | MED | PENDING | Evaluate claude-mem (github.com/thedotmack/claude-mem) as optional semantic retrieval layer | TASK-0001 | 2026-05-31 | 2026-05-31 | Researcher | MED | S |
 | TASK-0005 | MED | PENDING | Mine GSD agents/workflows for reusable research+planning patterns; fold useful ones into runtime.md | TASK-0001 | 2026-05-31 | 2026-05-31 | Reviewer | MED | M |
 | TASK-0006 | LOW | PENDING | Add Discord slash-command bot (/status /tasks /report /recover) as a separate supervised gateway | TASK-0002 | 2026-05-31 | 2026-05-31 | Builder | MED | M |
@@ -17,3 +17,4 @@
 - Weekly rollup report → #📅-daily-report.
 - Self-improvement scan: detect workflow bottlenecks, auto-file tasks.
 - Obsidian export of `knowledge/` if a vault appears.
+- Continuous discovery: keep scoring opportunities until a ≥80 project exists, then narrow to advancing it (per opportunity-engine).

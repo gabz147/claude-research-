@@ -37,3 +37,11 @@
 **Decision:** Do not install claude-mem now; evaluate as an *optional* semantic search layer over `research/` later (TASK-0004).
 **Reasoning:** Not installed; vector memory must never be authoritative (ADR-001). File-grep + structured docs cover current needs.
 **Consequences:** Recorded in docs/CLAUDE-MEM-EVALUATION.md; revisit when corpus is large enough that grep stops scaling.
+
+---
+### ADR-006 — Mission set to Blue-Ocean opportunity discovery + stage-gated execution (2026-05-31)
+**Decision:** The org's mission is to discover, validate, and execute a *small number of exceptional B2B business opportunities* (not generate idea lists). Adopted a 0–100 scoring rubric (Pain 20 / Spend 20 / Frequency 15 / AI-Leverage 15 / Competitive-Weakness 15 / Defensibility 15) with stage gates: <70 archive · 70–79 monitor · 80–89 validation project · 90+ execution project. Funnel: discover → validate → business model → MVP → build plan → customer acquisition.
+**Reasoning:** Operator wants economic value, not research volume. Codifying the gate forces the org to *stop researching and start building* when confidence is high, avoiding perpetual-research failure mode.
+**Alternatives:** Open-ended research (rejected — no destination); pure idea generation (rejected — explicitly a failure mode per MISSION).
+**Tradeoffs:** Heavier doctrine + templates; narrower focus. Accepted — focus is the point.
+**Consequences:** `prompts/opportunity-engine.md` is canonical doctrine; `runtime.md` advances the funnel (project-advance beats new discovery); `projects/` holds promoted opportunities; `research/OPPORTUNITIES.md` is the scored ledger; `templates/` holds stage artifacts; `#🏆-opportunities` Discord channel added. AI is a capability, never the product — score AI Leverage, don't chase AI.

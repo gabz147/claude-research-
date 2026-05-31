@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "project": "claude-research-bot",
-  "current_objective": "Deploy platform and run first research cycle",
-  "current_phase": "PHASE 0 — platform built, pre-deploy",
+  "current_objective": "Deploy, then run first opportunity discovery+scoring cycle (Blue-Ocean B2B, ADR-006)",
+  "current_phase": "PHASE 0 — platform + opportunity doctrine built, pre-deploy",
   "current_task": "TASK-0002",
   "active_research": null,
   "open_tasks": [
