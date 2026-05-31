@@ -1,0 +1,1 @@
+{"id":"TASK-0011","priority":"HIGH","status":"PENDING","description":"Harden full-auto: systemd ProtectHome/ReadWritePaths sandbox + monthly spend cap (GOVERNANCE backlog)","dependencies":[],"created":"2026-05-31T12:39:15Z","updated":"2026-05-31T12:39:15Z","owner":"Researcher","confidence":"MED","effort":"M","notes":""}

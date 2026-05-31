@@ -27,6 +27,12 @@ state_set '.lock_held=true' || true
 cleanup() { state_set '.lock_held=false' 2>/dev/null || true; flock -u 9 2>/dev/null || true; }
 trap cleanup EXIT
 
+# ---- kill switch (governance) ------------------------------------------
+if [ -f "$ROOT/state/PAUSED" ]; then
+  log WARN "supervisor: state/PAUSED present — refusing to run. Remove it to resume."
+  exit 0
+fi
+
 # ---- usage-limit backoff ------------------------------------------------
 if [ "$MODE" != "--once" ]; then
   until_ts="$(state_get '.usage_limit_until')"

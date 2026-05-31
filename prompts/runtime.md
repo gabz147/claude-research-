@@ -4,6 +4,12 @@ You have already reconstructed state via `prompts/bootstrap.md`. Now perform ONE
 
 **Doctrine:** This org discovers, validates, and executes **business opportunities** per `prompts/opportunity-engine.md` and `MISSION.md`. Read the engine — it governs scoring, stage gates, and the discovery→validation→execution funnel. The destination is a buildable business, not a list of ideas.
 
+**Skills + tools to use this cycle:**
+- `skills/opportunity-research/SKILL.md` — the discovery+scoring workflow (use for any research task).
+- `skills/anti-slop/SKILL.md` — apply to ALL prose before posting (reports, theses, outreach).
+- `scripts/ingest_doc.sh <pdf|url>` — convert PDFs/reports/RFPs to markdown in `research/sources/` for evidence.
+- `rules/` — binding operating rules; run `rules/self-audit.md` checklist before handoff.
+
 ## 1. Select work — advance the funnel, don't just discover
 Priority order (highest first):
 1. **Push the leading project.** If any `projects/<slug>/` has a promoted opportunity (score ≥80) not yet at its final gate, advance it ONE gate this cycle (validation → business model → MVP → execution → acquisition). Narrowing beats discovering.

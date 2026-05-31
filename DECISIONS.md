@@ -45,3 +45,11 @@
 **Alternatives:** Open-ended research (rejected — no destination); pure idea generation (rejected — explicitly a failure mode per MISSION).
 **Tradeoffs:** Heavier doctrine + templates; narrower focus. Accepted — focus is the point.
 **Consequences:** `prompts/opportunity-engine.md` is canonical doctrine; `runtime.md` advances the funnel (project-advance beats new discovery); `projects/` holds promoted opportunities; `research/OPPORTUNITIES.md` is the scored ledger; `templates/` holds stage artifacts; `#🏆-opportunities` Discord channel added. AI is a capability, never the product — score AI Leverage, don't chase AI.
+
+---
+### ADR-007 — Integrated external patterns from 19-repo evaluation (2026-05-31)
+**Decision:** Cannibalized the useful pieces from 19 evaluated repos (full record: docs/EXTERNAL-EVALUATIONS.md). Integrated now: anti-slop skill (stop-slop), markitdown ingestion, opportunity-research skill in knowledge-work-plugins SKILL format (+ ECC deep-research/market-research/verification-loop patterns), OWASP-Agentic governance + kill switch (agent-governance-toolkit), and a `rules/` governance set (claude-code-harness).
+**Reasoning:** Each directly improves a weak spot — research quality, evidence ingestion, output polish, and the standing full-auto safety risk (ADR-002). Took patterns/skills, not heavyweight frameworks.
+**Alternatives:** Adopt frameworks wholesale (rejected — bloat, failure surface); build from scratch (rejected — these are proven).
+**Tradeoffs:** More files (skills/, rules/). Accepted — each is small and referenced by the prompts.
+**Consequences:** bootstrap/runtime now reference `rules/` + `skills/`; supervisor honors `state/PAUSED` kill switch. Deferred items filed as TASK-0007..0011. ECC star count is inflated but its skill content is genuine — judged on substance.
