@@ -1,0 +1,12 @@
+[Unit]
+Description=claude-research-bot ARO — hourly cycle trigger
+
+[Timer]
+# First run shortly after boot, then every hour. Persistent catches missed runs after downtime.
+OnBootSec=2min
+OnUnitActiveSec=1h
+Persistent=true
+Unit=claude-research-bot.service
+
+[Install]
+WantedBy=timers.target

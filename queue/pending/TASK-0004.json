@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0004",
+  "priority": "MED",
+  "status": "PENDING",
+  "description": "Evaluate claude-mem (github.com/thedotmack/claude-mem): memory model, retrieval, storage, failure modes. Decide if it earns a place as an OPTIONAL semantic layer over research/.",
+  "dependencies": ["TASK-0001"],
+  "created": "2026-05-31",
+  "updated": "2026-05-31",
+  "owner": "Researcher",
+  "confidence": "MED",
+  "effort": "S",
+  "notes": "Vector memory must never be authoritative (ADR-001). Update docs/CLAUDE-MEM-EVALUATION.md with the verdict."
+}

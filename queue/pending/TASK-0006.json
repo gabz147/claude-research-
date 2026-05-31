@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0006",
+  "priority": "LOW",
+  "status": "PENDING",
+  "description": "Add optional Discord slash-command gateway (/status /tasks /report /recover) as a separate supervised process. Outbound observability already works without it.",
+  "dependencies": ["TASK-0002"],
+  "created": "2026-05-31",
+  "updated": "2026-05-31",
+  "owner": "Builder",
+  "confidence": "MED",
+  "effort": "M",
+  "notes": "discord.py gateway, read-only commands that render repo state. Keep repo as source of truth."
+}

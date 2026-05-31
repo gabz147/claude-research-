@@ -1,0 +1,18 @@
+{
+  "project": "claude-research-bot",
+  "root": "/home/tar/claude-research-bot",
+  "cycle": {
+    "interval_minutes": 60,
+    "max_runtime_seconds": 3000,
+    "headless_flags": ["-p", "--dangerously-skip-permissions"],
+    "model": ""
+  },
+  "limits": {
+    "usage_limit_backoff_minutes": 60,
+    "max_consecutive_failures": 5
+  },
+  "research": {
+    "default_confidence_required": "MEDIUM",
+    "max_tasks_per_cycle": 1
+  }
+}

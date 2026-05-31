@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0003",
+  "priority": "HIGH",
+  "status": "PENDING",
+  "description": "Research: identify 5 blue-ocean B2B contracting niches (low competition, clear buyer, recurring need, low capex). Full methodology, confidence-rated.",
+  "dependencies": ["TASK-0002"],
+  "created": "2026-05-31",
+  "updated": "2026-05-31",
+  "owner": "Researcher",
+  "confidence": "MED",
+  "effort": "M",
+  "notes": "First real research output. Write to research/TASK-0003-*.md, index in RESEARCH.md, summary to #research-feed."
+}

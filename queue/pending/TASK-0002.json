@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0002",
+  "priority": "HIGH",
+  "status": "PENDING",
+  "description": "Deploy: install systemd timer, run first supervised cycle, confirm Discord heartbeat in #status",
+  "dependencies": ["TASK-0001"],
+  "created": "2026-05-31",
+  "updated": "2026-05-31",
+  "owner": "Recovery",
+  "confidence": "HIGH",
+  "effort": "S",
+  "notes": "Run automation/install.sh then scripts/supervisor.sh --once."
+}

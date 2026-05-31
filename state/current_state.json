@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "project": "claude-research-bot",
+  "current_objective": "Deploy platform and run first research cycle",
+  "current_phase": "PHASE 0 — platform built, pre-deploy",
+  "current_task": "TASK-0002",
+  "active_research": null,
+  "open_tasks": [
+    "TASK-0002",
+    "TASK-0003",
+    "TASK-0004",
+    "TASK-0005",
+    "TASK-0006"
+  ],
+  "completed_tasks": [
+    "TASK-0001"
+  ],
+  "failed_tasks": [],
+  "last_execution": "2026-05-31T11:45:27Z",
+  "last_report": "REPORT.md",
+  "confidence": "HIGH",
+  "next_action": "Run scripts/doctor.sh then scripts/supervisor.sh --once",
+  "recovery_status": "CLEAN",
+  "consecutive_failures": 0,
+  "usage_limit_until": null,
+  "lock_held": false
+}

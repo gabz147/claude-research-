@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0005",
+  "priority": "MED",
+  "status": "PENDING",
+  "description": "Mine GSD (~/.claude/get-shit-done) agents + workflows for reusable research/planning/review patterns. Fold the useful ones into prompts/runtime.md.",
+  "dependencies": ["TASK-0001"],
+  "created": "2026-05-31",
+  "updated": "2026-05-31",
+  "owner": "Reviewer",
+  "confidence": "MED",
+  "effort": "M",
+  "notes": "Do not blindly copy. Extract concepts: phase-researcher methodology, plan/verify loop, confidence gating. Record findings in docs/GSD-EVALUATION.md."
+}

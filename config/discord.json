@@ -1,0 +1,14 @@
+{
+  "guild": { "name": "CODING", "id": "1510474623291228210" },
+  "bot": { "name": "tarbot - code", "id": "1510476048243097620" },
+  "category": { "name": "🔬 RESEARCH ORG", "id": "1510607329916354742" },
+  "channels": {
+    "status":    { "name": "📊-status",        "id": "1510607331656994988" },
+    "research":  { "name": "🔬-research-feed",  "id": "1510607332868886551" },
+    "active":    { "name": "🎯-active-work",    "id": "1510607334542671924" },
+    "completed": { "name": "✅-completed",      "id": "1510607336480313395" },
+    "alerts":    { "name": "🚨-alerts",         "id": "1510607338434986126" },
+    "daily":     { "name": "📅-daily-report",   "id": "1510607339961581702" }
+  },
+  "note": "Outbound observability only. Token lives in config/.env, not here. Repo is source of truth; Discord is a mirror."
+}

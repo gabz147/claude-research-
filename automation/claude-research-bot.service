@@ -1,0 +1,18 @@
+[Unit]
+Description=claude-research-bot ARO — one autonomous research cycle
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/tar/claude-research-bot
+ExecStart=/home/tar/claude-research-bot/scripts/supervisor.sh
+# claude CLI lives in ~/.local/bin
+Environment=HOME=/home/tar
+Environment=PATH=/home/tar/.local/bin:/usr/local/bin:/usr/bin:/bin
+# A cycle should not run forever; supervisor also enforces its own timeout.
+TimeoutStartSec=3600
+Nice=10
+
+[Install]
+WantedBy=default.target

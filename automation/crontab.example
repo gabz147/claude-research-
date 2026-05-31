@@ -1,0 +1,7 @@
+# claude-research-bot — cron fallback (if you prefer cron over systemd).
+# Install with:  crontab automation/crontab.example
+# Runs every hour at :07. supervisor.sh holds a lock, so overlaps are safe.
+# @reboot line gives a quick post-boot kick.
+
+@reboot       sleep 120 && /home/tar/claude-research-bot/scripts/supervisor.sh >> /home/tar/claude-research-bot/logs/cron.log 2>&1
+7 * * * *     /home/tar/claude-research-bot/scripts/supervisor.sh >> /home/tar/claude-research-bot/logs/cron.log 2>&1

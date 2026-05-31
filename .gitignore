@@ -1,0 +1,15 @@
+# Secrets — NEVER commit
+config/.env
+*.env
+*.token
+*.secret
+
+# Runtime
+logs/*.log
+logs/*.jsonl
+*.lock
+state/*.lock
+
+# OS / editor
+.DS_Store
+*.swp
