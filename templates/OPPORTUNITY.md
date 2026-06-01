@@ -28,4 +28,5 @@
 | Defensibility | 15 | | |
 | **Total** | **100** | | |
 
-**Gate decision:** <70 archive · 70–79 monitor · 80–89 validation · 90+ execution.
+**Hard gap gate:** Competitive Weakness ≥ 8/15? (if NO → capped at *monitor* regardless of total; incumbents serve the wedge). Wedge audited: "<exact proposed wedge, not an adjacent product>".
+**Gate decision:** <70 archive · 70–79 monitor · 80–89 validation · 90+ execution — *after* the hard gap gate.

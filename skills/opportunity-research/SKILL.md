@@ -35,8 +35,17 @@ A claim without two independent sources is a hypothesis, not a finding. After wr
 - **Competitive Weakness (15):** incumbents weak, hated, fragmented, or absent = high.
 - **Defensibility (15):** durable moat — proprietary data, deep integration, workflow lock-in = high.
 
+## Hard gate (binding — overrides the total)
+A high total does **not** make an opportunity. The gap is binding: **Competitive Weakness < 8/15
+fails the gate** — the opportunity is capped at *monitor* regardless of total, because incumbents
+already serve the wedge. A 90-total play that incumbents serve well is not an opportunity; a
+78-total play in a genuinely weak/absent field is. Rank by: (1) passes the gap gate? then (2)
+total. Before applying the gate, confirm the **Competitive Weakness** score audited the *proposed*
+wedge, not an adjacent product — a one-query competitor check is not a verdict (run the
+`evidence-graph` blast-radius check on the gap claim if it rests on few sources).
+
 ## Gate → action
-<70 archive · 70-79 monitor (ledger only) · 80-89 create `projects/<slug>/` + validation artifacts · 90+ execution project. On 80+, STOP broad discovery and drive that one down the funnel (validation → business model → MVP → build plan → acquisition).
+<70 archive · 70-79 monitor (ledger only) · 80-89 create `projects/<slug>/` + validation artifacts · 90+ execution project. On 80+, STOP broad discovery and drive that one down the funnel (validation → business model → MVP → build plan → acquisition). **The hard gap gate above is checked first — a sub-8 Competitive Weakness caps the action at monitor even at 90+.**
 
 ## Anti-patterns (auto-deprioritize)
 AI wrappers, generic chatbots/content tools, dropshipping, generic agencies, day trading, affiliate/influencer, trend-chasing, consumer-scale plays. Research these only with extraordinary evidence (see MISSION.md).
