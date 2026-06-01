@@ -53,3 +53,11 @@
 **Alternatives:** Adopt frameworks wholesale (rejected — bloat, failure surface); build from scratch (rejected — these are proven).
 **Tradeoffs:** More files (skills/, rules/). Accepted — each is small and referenced by the prompts.
 **Consequences:** bootstrap/runtime now reference `rules/` + `skills/`; supervisor honors `state/PAUSED` kill switch. Deferred items filed as TASK-0007..0011. ECC star count is inflated but its skill content is genuine — judged on substance.
+
+---
+### ADR-008 — Pass-2 external-repo integration (12 repos the pass-1 eval missed) (2026-06-01)
+**Decision:** Completed the operator's 30-repo trending review. Pass 1 (ADR-007) evaluated 19; this pass assessed the 12 it missed and integrated the net-new, on-mission pieces: (a) `rules/llm-pitfalls.md` from andrej-karpathy-skills; (b) `skills/evidence-graph/SKILL.md` from Understand-Anything + codegraph (grep/jq-native, closes the deferred semantic-layer gap lightly); (c) a **binding gap-gate** in the opportunity model — Competitive Weakness <8/15 caps an opportunity at *monitor* regardless of total. Full verdicts for all 12 in docs/EXTERNAL-EVALUATIONS.md (PASS 2 section). Deferred sub-agent lanes (harness) + structured recall (agentmemory) to TASK-0012.
+**Reasoning:** Each addition hardens a real weak spot — reasoning accuracy (pitfalls rule), evidence-base fragility (evidence-graph blast-radius), and the failure mode where a high-scoring opportunity is actually well-served by incumbents (gap-gate). Rejected 9router (provenance/ToS) and CloakBrowser (detection-evasion conflicts with governance) on principle; ViMax/Pixelle-Video/RuView/UI-TARS as off-mission/infra.
+**Alternatives:** Re-run the whole 19-repo pass (rejected — wasteful, ADR-007 stands); adopt agentmemory/ruflo infra wholesale (rejected — ≫ single-worker need, violates ADR-001/005 lean-memory stance).
+**Tradeoffs:** One new rule, one new skill, edits to the opportunity scoring contract. Accepted — additive, no existing functionality removed.
+**Consequences:** Opportunity scoring now gates on the gap before the total; evidence-graph should be run before 80+ promotions; bootstrap reads the new rule automatically (rules/ dir). External contributor pass (claude-opus-4-8) — the live autonomous loop may reconcile NEXT_ACTION/STATUS on its next cycle.
