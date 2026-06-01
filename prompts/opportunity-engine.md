@@ -9,7 +9,7 @@ Spend the **minimum research** required to reach high confidence, then **shift r
 Expensive · frequent · painful · urgent · ignored problems. Fragmented markets, operational bottlenecks, compliance burdens, revenue leakage, coordination failures, labor-intensive processes, information bottlenecks. **Business pain before technology.** See MISSION.md for target sectors, AI philosophy, high-ticket economics, and markets to avoid — they bind here.
 
 ## Every discovered opportunity records (the discovery record)
-Problem description · Affected customer · Current solution · Pain level · Frequency · Economic impact ($/yr) · Market characteristics · Competitive landscape · AI applicability · Implementation difficulty · Risks · Potential pricing · Potential business model · Evidence (ranked sources) · Confidence. Use `templates/OPPORTUNITY.md`. Log it to `research/OPPORTUNITIES.md` (the scored ledger).
+Problem description · Affected customer · Current solution · Pain level · Frequency · Economic impact ($/yr) · Market characteristics · Competitive landscape · AI applicability · Implementation difficulty · Risks · Potential pricing · Potential business model · Evidence (ranked sources) · Confidence. Use `templates/OPPORTUNITY.md`. **Register it via `scripts/registry.sh add`** — this mints a permanent `OPP-YYYY-NNN` id and writes the record to the authoritative registry (`research/opportunity_registry.json`, mapped to `research/INDEX.md`). **Run the dedup checkpoint first** and reuse an existing id if >70% similar (`rules/research-dedup.md`).
 
 ## Scoring (0–100) — score EVERY opportunity
 | Dimension | Range | Scoring guidance |

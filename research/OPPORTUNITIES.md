@@ -1,18 +1,15 @@
-# OPPORTUNITY LEDGER
+# OPPORTUNITY LEDGER → moved to the registry
 
-> Scored index of every opportunity the org evaluates. Owner: Researcher. Append-only (supersede with a new row + note; never delete). Source of detail: `research/<id>-*.md` (discovery record) and `projects/<slug>/` (promoted). Scoring + gates: `prompts/opportunity-engine.md`.
+The authoritative record of every opportunity is now **`research/opportunity_registry.json`**
+(managed by `scripts/registry.sh`), with the human-readable map generated at **`research/INDEX.md`**.
 
-**Gate:** <70 Archive · 70–79 Monitor · 80–89 Validation (project) · 90+ Execution (project).
+**Do not hand-maintain a table here.** To record or change an opportunity:
 
-| Date | ID | Opportunity (1-line) | Sector | Pain | Spend | Freq | AI | CompWk | Defens | **Score** | Gate | Project | Conf |
-|------|----|----|--------|-----|-------|------|----|--------|--------|-------|------|---------|------|
-| _(none yet — first scored opportunity lands via TASK-0003)_ | | | | | | | | | | | | | |
+```
+scripts/registry.sh search "<terms>"     # dedup checkpoint FIRST (rules/research-dedup.md)
+scripts/registry.sh add --name "..." --industry "..." --problem "..." --score N --status DISCOVERED --reasoning "..."
+scripts/registry.sh update <OPP-id> --status <STATE> --score N
+scripts/registry.sh reindex              # regenerate research/INDEX.md
+```
 
-## Monitor list (70–79)
-_(empty)_
-
-## Promoted projects (≥80)
-_(empty — see projects/)_
-
-## Archived (<70, notable near-misses)
-_(empty)_
+Scoring + gates: `prompts/opportunity-engine.md`. Dedup policy: `rules/research-dedup.md`.

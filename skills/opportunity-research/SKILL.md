@@ -13,6 +13,7 @@ Turn a sector or hunch into an evidence-backed, scored opportunity — and try t
 
 ## Workflow checklist (MUST pass in order)
 ```
+- [ ] Step 0: DEDUP CHECKPOINT — `scripts/registry.sh search "<terms>"` + read research/market_maps/<sector>.md; if >70% similar to an existing OPP (problem/customer/workflow/economics/solution/market), UPDATE it instead of creating a new one (rules/research-dedup.md)
 - [ ] Step 1: Frame — one falsifiable question + hypothesis (who hurts, how expensively?)
 - [ ] Step 2: Source plan — 3-5 sub-questions; ingest docs via scripts/ingest_doc.sh if PDFs/reports
 - [ ] Step 3: Evidence — gather from ranked sources (official > vendor > source code > academic > blogs > community); ≥2 independent per claim; tag FACT/LIKELY/SPECULATION/UNKNOWN
@@ -20,7 +21,7 @@ Turn a sector or hunch into an evidence-backed, scored opportunity — and try t
 - [ ] Step 5: Economics — quantify $/yr the problem costs the buyer; show the math
 - [ ] Step 6: Fill templates/OPPORTUNITY.md
 - [ ] Step 7: Score 0-100 (Pain20 Spend20 Freq15 AI15 CompWk15 Defens15) with per-dim justification
-- [ ] Step 8: Apply stage gate; log to research/OPPORTUNITIES.md; post scored thesis to #🏆-opportunities
+- [ ] Step 8: Apply stage gate; **register via `scripts/registry.sh add` (mints OPP-YYYY-NNN, authoritative registry)**; post scored thesis to #🏆-opportunities
 - [ ] Step 9: Apply anti-slop skill to the written thesis before posting
 ```
 

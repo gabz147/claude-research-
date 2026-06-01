@@ -22,6 +22,8 @@ Move the chosen task to active: `scripts/task.sh move <ID> active`. Post to `act
 Pick the mode that fits the task:
 
 ### Discovery / research mode (default)
+**Step 0 — DEDUP CHECKPOINT (mandatory, before anything else):** run `scripts/registry.sh search "<key terms>"` and read the relevant `research/market_maps/<sector>.md`. If an existing opportunity is >70% similar (problem / customer / workflow / economics / solution / market), **UPDATE it via `scripts/registry.sh update <OPP-id> ...` — do NOT create a duplicate** (`rules/research-dedup.md`). Proceed to a NEW opportunity only if the checkpoint is clean.
+
 Follow the methodology strictly:
 1. **Question** — what exactly are we answering?
 2. **Hypothesis** — your prior.
@@ -32,8 +34,8 @@ Follow the methodology strictly:
 7. **Conclusion** — with **Supporting evidence**, **Contradicting evidence**, **Final assessment**.
 8. **Confidence** — HIGH / MEDIUM / LOW, justified.
 
-**Then apply the opportunity engine:** fill `templates/OPPORTUNITY.md`, **score 0–100** across the 6 dimensions, log to `research/OPPORTUNITIES.md`, and apply the **stage gate** (<70 archive · 70–79 monitor · 80–89 → create project + validation artifacts · 90+ → execution project). Post the scored thesis to `#🏆-opportunities`.
-Write the finding to `research/<TASK-ID>-<slug>.md`; add a row to `RESEARCH.md`; promote durable knowledge into `knowledge/`.
+**Then apply the opportunity engine:** fill `templates/OPPORTUNITY.md`, **score 0–100** across the 6 dimensions, **register it via `scripts/registry.sh add --name … --industry … --problem … --score N --status … --reasoning …`** (mints the permanent `OPP-YYYY-NNN` id, files the record under `research/<state>/`, updates the authoritative registry + `research/INDEX.md`), and apply the **stage gate** (<70 archive · 70–79 monitor · 80–89 → create project + validation artifacts · 90+ → execution project). Post the scored thesis to `#🏆-opportunities`.
+Fill the record `scripts/registry.sh` created under `research/<state>/<OPP-id>-<slug>.md` with the full discovery record; add a row to `RESEARCH.md`; update `research/market_maps/<sector>.md`; promote durable knowledge into `knowledge/`. As state advances (validate/build), call `scripts/registry.sh update <OPP-id> --status <STATE>`.
 
 ### Project-advance mode (score ≥80)
 Open the leading `projects/<slug>/PROJECT.md`, advance exactly one gate per `prompts/opportunity-engine.md` (produce the next artifact from `templates/`), update PROJECT.md status + confidence, post the artifact to `#✅-completed`. If validation disproves it, archive the project and post a post-mortem to `#🚨-alerts`.
