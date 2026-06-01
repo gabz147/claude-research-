@@ -70,11 +70,13 @@ fi
 MAXT="$(cfg_get '.cycle.max_runtime_seconds')"; MAXT="${MAXT:-3000}"
 MODEL="${ARO_MODEL:-$(cfg_get '.cycle.model')}"
 MODEL_ARG=(); [ -n "$MODEL" ] && MODEL_ARG=(--model "$MODEL")
+EFFORT="${ARO_EFFORT:-$(cfg_get '.cycle.effort')}"
+EFFORT_ARG=(); [ -n "$EFFORT" ] && EFFORT_ARG=(--effort "$EFFORT")
 PROMPT="$(cat "$ROOT/prompts/bootstrap.md")"
 
 set +e
 ( cd "$ROOT" && timeout "$MAXT" claude -p "$PROMPT" \
-    --dangerously-skip-permissions "${MODEL_ARG[@]}" ) >"$RUN_LOG" 2>&1
+    --dangerously-skip-permissions "${MODEL_ARG[@]}" "${EFFORT_ARG[@]}" ) >"$RUN_LOG" 2>&1
 rc=$?
 set -e 2>/dev/null || true
 

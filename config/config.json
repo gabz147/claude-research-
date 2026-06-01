@@ -4,8 +4,13 @@
   "cycle": {
     "interval_minutes": 60,
     "max_runtime_seconds": 3000,
-    "headless_flags": ["-p", "--dangerously-skip-permissions"],
-    "model": ""
+    "headless_flags": [
+      "-p",
+      "--dangerously-skip-permissions"
+    ],
+    "model": "claude-opus-4-8",
+    "effort": "xhigh",
+    "workflows": true
   },
   "limits": {
     "usage_limit_backoff_minutes": 60,
