@@ -53,3 +53,11 @@
 **Alternatives:** Adopt frameworks wholesale (rejected — bloat, failure surface); build from scratch (rejected — these are proven).
 **Tradeoffs:** More files (skills/, rules/). Accepted — each is small and referenced by the prompts.
 **Consequences:** bootstrap/runtime now reference `rules/` + `skills/`; supervisor honors `state/PAUSED` kill switch. Deferred items filed as TASK-0007..0011. ECC star count is inflated but its skill content is genuine — judged on substance.
+
+---
+### ADR-008 — Organizational Execution Framework + scoring re-weighting (2026-06-15)
+**Decision:** Added an ORGANIZATIONAL EXECUTION FRAMEWORK to MISSION.md (capital allocation, customer-reality evidence hierarchy, termination rules, execution bias, monopoly lens, acquisition-before-development, portfolio management, CEO review, build-authorization gate, final principle). **Re-weighted the 0–100 scoring rubric** to prioritize business fundamentals over technology: Pain 25 / Spend 20 / Frequency 15 / Competitive-Weakness 15 / Defensibility 15 / AI-Leverage 10 (was Pain 20 / AI 15). Propagated the new weights to MISSION.md's scoring table and `prompts/opportunity-engine.md`.
+**Reasoning:** Owner directive. Sharpens the org against perpetual-research drift, elevates customer/market evidence over analysis, and lowers AI's weight so the org chases expensive business pain, not AI novelty. Supersedes the rubric set in ADR-006.
+**Alternatives:** Append the framework but leave old weights (rejected — two contradictory rubrics the autonomous bot reads); flag-only without propagating (rejected — same inconsistency).
+**Tradeoffs:** Build is now hard-gated at score ≥90 + a full validation/business-model/acquisition checklist. Accepted — that is the intent.
+**Consequences:** `prompts/opportunity-engine.md` scoring table updated to match; build cannot begin until the ADR-008 checklist passes; CEO review + portfolio classification (Promote/Continue/Monitor/Pause/Archive) expected each review cycle; AI Leverage capped at 10. Stage gates unchanged (<70 / 70–79 / 80–89 / 90+).
