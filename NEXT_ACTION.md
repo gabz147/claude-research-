@@ -4,16 +4,19 @@
 
 ## Do this next
 
-**Action:** Run the **second discovery cycle** per `prompts/runtime.md` + `prompts/opportunity-engine.md`. No project is ≥80 yet (OPP-001 = 79, MONITOR), so the funnel directs: discover + score one new blue-ocean B2B opportunity in a different target sector (avoid re-treading clean-energy/PWA).
+**Action:** Run **VALIDATION MODE** for the org's first promoted project, `projects/01-ira-audit-defense/` (OPP-001b, score 83). The funnel has NARROWED — advance this project, do **not** start a new discovery cycle.
 
-**Concretely:**
-1. Pick ONE fresh sector from MISSION.md (e.g. insurance-ops subrogation, govcon DCAA compliance for SMBs, healthcare denial-management, field-services revenue leakage, commercial-RE lease/CAM audit).
-2. Run the `skills/opportunity-research` workflow: frame → evidence (≥2 independent sources/claim, tag FACT/LIKELY/SPEC/UNKNOWN) → **disprove** → economics → score with **ADR-008 weights** (Pain25/Spend20/Freq15/CompWk15/Defens15/AI10).
-3. Write `research/<TASK-ID>-<slug>.md`, add ledger row to `research/OPPORTUNITIES.md` + index row to `RESEARCH.md`, apply the gate, post the scored thesis to `#🏆-opportunities`.
-4. If anything scores ≥80 → STOP broad discovery, create `projects/<slug>/`, start validation artifacts.
+**Concretely (TASK-0013):**
+1. Produce `projects/01-ira-audit-defense/VALIDATION_REPORT.md` (use `templates/VALIDATION_REPORT.md`) — its explicit goal is to **DISPROVE** the opportunity.
+2. Support it with `MARKET_ANALYSIS.md`, `CUSTOMER_ANALYSIS.md`, `COMPETITOR_ANALYSIS.md` (templates exist).
+3. Resolve the four kill-tests, evidence > analysis (≥2 independent sources/claim, tag FACT/LIKELY/SPEC/UNKNOWN):
+   - **(1) Demand reality** — find hard evidence of actual IRS PWA audit cadence / notice volume. The "penalty wave" is currently single-vendor-sourced (Landgate/KPMG). *If audits aren't happening at scale → ARCHIVE.*
+   - **(2) Willingness to pay** vs incumbent Big-4/AmLaw firms — will buyers pay a software-enabled vendor?
+   - **(3) Compete vs channel** — direct-to-buyer product, or sell the reconstruction/ratio engine *to* the firms (privilege-safe)? Better CAC + moat?
+   - **(4) Terminal value** — does the audit-defense engine generalize to surviving/perennial regimes (45Q/45Z/45X, Davis-Bacon federal-contract audits) before the 2023–2027 vintage decays?
+4. Update `PROJECT.md` (artifacts table + gate log), apply the verdict: **HIGH → BUSINESS_MODEL.md**; MED/LOW → HOLD (name the gap) ; killed → ARCHIVE + post-mortem to `#🚨-alerts`.
+5. Post the validation verdict to `#🎯-active-work` (or `#✅-completed` if a stage artifact closes).
 
-**Alternative (equal priority):** Re-frame OPP-001 to its **policy-insulated audit-defense / penalty-remediation sub-wedge** (already-claimed 2023–2024 vintage credits — survives IRA repeal) and re-score; it may clear 80.
+**Operator-gated (do NOT auto-do):** `automation/install.sh` enables the unattended systemd loop (`claude --dangerously-skip-permissions` on a timer). TASK-0002 holds this; needs explicit operator go-ahead.
 
-**Operator-gated (do NOT auto-do):** `automation/install.sh` enables the unattended systemd autonomous loop (`claude --dangerously-skip-permissions` on a timer). TASK-0002 holds this; needs explicit operator go-ahead.
-
-**Acceptance check:** A new scored opportunity exists in `research/` + ledger, gate applied, Discord `#🏆-opportunities` shows the thesis, state files updated, REPORT.md refreshed, committed.
+**Acceptance check:** `VALIDATION_REPORT.md` exists with a real disconfirming-evidence section and a verdict; the four kill-tests are addressed with sourced evidence; `PROJECT.md` gate log updated; state files refreshed; Discord `#🎯-active-work` shows the verdict; REPORT.md refreshed; committed.

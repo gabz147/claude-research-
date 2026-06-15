@@ -8,13 +8,14 @@
 
 | Date | ID | Opportunity (1-line) | Sector | Pain/25 | Spend/20 | Freq/15 | CompWk/15 | Defens/15 | AI/10 | **Score** | Gate | Project | Conf |
 |------|----|----|--------|-----|-------|------|--------|--------|----|-------|------|---------|------|
-| 2026-06-15 | OPP-001 | IRA prevailing-wage & apprenticeship (PWA) compliance + audit-defense for clean-energy projects (protect the 5× tax-credit multiplier) | Compliance / clean-energy | 23 | 19 | 13 | 8 | 10 | 6 | **79** | MONITOR | — | MED |
+| 2026-06-15 | OPP-001b | IRA PWA **audit-defense & penalty-remediation** for already-claimed 2023–2025 vintage credits (policy-insulated re-frame of OPP-001) | Compliance / tax controversy / clean-energy | 24 | 19 | 10 | 11 | 12 | 7 | **83** | VALIDATION | 01-ira-audit-defense | MED |
+| 2026-06-15 | OPP-001 | IRA prevailing-wage & apprenticeship (PWA) *preventive* compliance for clean-energy projects (protect the 5× tax-credit multiplier) | Compliance / clean-energy | 23 | 19 | 13 | 8 | 10 | 6 | **79** | MONITOR (superseded by OPP-001b) | — | MED |
 
 ## Monitor list (70–79)
-- **OPP-001 — IRA PWA compliance (79, MED).** Huge pain/spend (5× credit, $50–$500/labor-hr penalties, multi-year recapture), but capped by forming competition with distribution (DSPTCH, eBacon, Reunion, Crux, KPMG/Landgate) + **existential policy risk** to the IRA credit regime. **Watch triggers:** (a) IRA credits reaffirmed/extended → re-score competitive weakness toward ≥80; (b) re-frame to the policy-insulated **audit-defense/remediation sub-wedge** (already-claimed 2023–2024 vintage credits) and re-score. Detail: `research/TASK-0003-ira-pwa-compliance.md`.
+- **OPP-001 — IRA PWA *preventive* compliance (79, MED).** Superseded by **OPP-001b** (the audit-defense re-frame, promoted). Kept for the record: broad preventive-compliance framing capped by forming competition with distribution (DSPTCH, eBacon, Reunion, Crux, KPMG/Landgate) + existential IRA policy risk. Detail: `research/TASK-0003-ira-pwa-compliance.md`.
 
 ## Promoted projects (≥80)
-_(empty — see projects/)_
+- **OPP-001b — IRA PWA audit-defense & penalty-remediation (83, MED) → `projects/01-ira-audit-defense/`.** Re-frame of OPP-001 to the **runoff book** of already-claimed 2023–2025 vintage credits — insulated from OBBBA's *prospective* phase-out (CONFIRMED: OBBBA is not a wholesale repeal; already-claimed credits remain valid & auditable; PWA persists; transferees independently liable). Competition is weak (manual Big-4/law firms; no productized audit-defense). Promoted to VALIDATION to be disproven on: real IRS audit cadence, WTP vs law firms, compete-vs-channel, runoff terminal value. Detail: `research/TASK-0003b-ira-audit-defense.md`. ADR-010.
 
 ## Archived (<70, notable near-misses)
 _(empty)_

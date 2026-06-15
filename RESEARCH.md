@@ -11,6 +11,7 @@ Every finding records: **Supporting evidence**, **Contradicting evidence**, **Fi
 | ID | Date | Question | Confidence | File |
 |----|------|----------|-----------|------|
 | TASK-0003 / OPP-001 | 2026-06-15 | Is IRA prevailing-wage & apprenticeship (PWA) compliance a buildable, defensible high-ticket B2B opportunity? | MED | `research/TASK-0003-ira-pwa-compliance.md` |
+| TASK-0003b / OPP-001b | 2026-06-15 | Is IRA PWA **audit-defense** for already-claimed 2023–2025 vintage credits a buildable, *policy-insulated* high-ticket B2B opportunity? **→ 83/100, promoted to project 01-ira-audit-defense** | MED | `research/TASK-0003b-ira-audit-defense.md` |
 
 ## Open questions
 - Which B2B contracting niches combine low competition + clear buyer + recurring need?

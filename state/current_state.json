@@ -1,11 +1,13 @@
 {
   "schema_version": 1,
   "project": "claude-research-bot",
-  "current_objective": "First discovery cycle DONE (OPP-001 scored 79 -> MONITOR). Next: discover a second opportunity OR re-frame OPP-001's policy-insulated audit-defense sub-wedge. No >=80 project yet.",
-  "current_phase": "PHASE 1 — discovery active (platform verified healthy; systemd timer operator-gated)",
-  "current_task": "TASK-0003",
+  "current_objective": "FIRST PROJECT PROMOTED. OPP-001 re-framed to its policy-insulated audit-defense sub-wedge (OPP-001b), re-scored 83 -> VALIDATION, promoted to projects/01-ira-audit-defense. Discovery now NARROWS to advancing this project down the funnel.",
+  "current_phase": "PHASE 2 — validation (project 01-ira-audit-defense in VALIDATION MODE; platform healthy; systemd timer operator-gated)",
+  "current_task": "TASK-0013",
   "active_research": null,
+  "leading_project": "01-ira-audit-defense",
   "open_tasks": [
+    "TASK-0013",
     "TASK-0002",
     "TASK-0004",
     "TASK-0005",
@@ -22,12 +24,12 @@
     "TASK-0003"
   ],
   "failed_tasks": [],
-  "last_execution": "2026-06-15T19:49:00Z",
+  "last_execution": "2026-06-15T00:00:00Z",
   "last_report": "REPORT.md",
   "confidence": "HIGH",
-  "next_action": "Run a 2nd discovery cycle (new target-sector opportunity) OR re-score OPP-001's audit-defense sub-wedge; see NEXT_ACTION.md. systemd timer install is operator-gated (TASK-0002).",
+  "next_action": "Run VALIDATION MODE for projects/01-ira-audit-defense (TASK-0013): produce VALIDATION_REPORT.md + market/customer/competitor analyses, attempting to DISPROVE on (1) real IRS audit cadence, (2) WTP vs law firms, (3) compete-vs-channel, (4) runoff terminal value. See NEXT_ACTION.md.",
   "recovery_status": "CLEAN",
   "consecutive_failures": 0,
   "usage_limit_until": null,
-  "lock_held": false
+  "lock_held": true
 }
