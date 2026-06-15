@@ -10,7 +10,7 @@ Every finding records: **Supporting evidence**, **Contradicting evidence**, **Fi
 ## Findings index
 | ID | Date | Question | Confidence | File |
 |----|------|----------|-----------|------|
-| _(none yet — first finding lands via TASK-0003)_ | | | | |
+| TASK-0003 / OPP-001 | 2026-06-15 | Is IRA prevailing-wage & apprenticeship (PWA) compliance a buildable, defensible high-ticket B2B opportunity? | MED | `research/TASK-0003-ira-pwa-compliance.md` |
 
 ## Open questions
 - Which B2B contracting niches combine low competition + clear buyer + recurring need?

@@ -1,11 +1,13 @@
 {
   "id": "TASK-0003",
   "priority": "HIGH",
-  "status": "PENDING",
+  "status": "COMPLETED",
   "description": "Discovery cycle: surface + score 3-5 blue-ocean B2B opportunities (expensive, frequent, painful problems in target sectors) using templates/OPPORTUNITY.md. Score each 0-100 per opportunity-engine. Promote any >=80 to projects/. Log all to research/OPPORTUNITIES.md.",
-  "dependencies": ["TASK-0002"],
+  "dependencies": [
+    "TASK-0002"
+  ],
   "created": "2026-05-31",
-  "updated": "2026-05-31",
+  "updated": "2026-06-15T19:49:36Z",
   "owner": "Researcher",
   "confidence": "MED",
   "effort": "M",

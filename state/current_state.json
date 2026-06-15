@@ -1,25 +1,31 @@
 {
   "schema_version": 1,
   "project": "claude-research-bot",
-  "current_objective": "Deploy, then run first opportunity discovery+scoring cycle (Blue-Ocean B2B, ADR-006)",
-  "current_phase": "PHASE 0 — platform + opportunity doctrine built, pre-deploy",
-  "current_task": "TASK-0002",
+  "current_objective": "First discovery cycle DONE (OPP-001 scored 79 -> MONITOR). Next: discover a second opportunity OR re-frame OPP-001's policy-insulated audit-defense sub-wedge. No >=80 project yet.",
+  "current_phase": "PHASE 1 — discovery active (platform verified healthy; systemd timer operator-gated)",
+  "current_task": "TASK-0003",
   "active_research": null,
   "open_tasks": [
     "TASK-0002",
-    "TASK-0003",
     "TASK-0004",
     "TASK-0005",
-    "TASK-0006"
+    "TASK-0006",
+    "TASK-0007",
+    "TASK-0008",
+    "TASK-0009",
+    "TASK-0010",
+    "TASK-0011",
+    "TASK-0012"
   ],
   "completed_tasks": [
-    "TASK-0001"
+    "TASK-0001",
+    "TASK-0003"
   ],
   "failed_tasks": [],
-  "last_execution": "2026-05-31T11:45:27Z",
+  "last_execution": "2026-06-15T19:49:00Z",
   "last_report": "REPORT.md",
   "confidence": "HIGH",
-  "next_action": "Run scripts/doctor.sh then scripts/supervisor.sh --once",
+  "next_action": "Run a 2nd discovery cycle (new target-sector opportunity) OR re-score OPP-001's audit-defense sub-wedge; see NEXT_ACTION.md. systemd timer install is operator-gated (TASK-0002).",
   "recovery_status": "CLEAN",
   "consecutive_failures": 0,
   "usage_limit_until": null,
