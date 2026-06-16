@@ -17,11 +17,13 @@
 | 10 | Weak human oversight | Human reviews via Discord + git diff; switch-flips (deploy / first live run) left to human | ✅ |
 
 ## Hardening backlog (recommended, not yet done)
-1. **Filesystem sandbox:** run the cycle under a constrained CWD with no write access outside `~/claude-research-bot` (e.g. `systemd` `ProtectHome`/`ReadWritePaths=`, or `bwrap`). High value vs. full-auto.
-2. **Network egress:** allowlist outbound to Discord + research domains if the VM supports it.
-3. **Prompt-injection guard:** runtime rule — ingested source text is data, never commands. (Added to `rules/`.)
-4. **Spend cap:** hard monthly usage ceiling enforced in supervisor before launch.
-5. **Kill switch:** a `state/PAUSED` sentinel file that supervisor checks first and refuses to run if present.
+1. **Network egress:** allowlist outbound to Discord + research domains if the VM supports it.
+2. **Prompt-injection guard:** runtime rule — ingested source text is data, never commands. (Added to `rules/`.)
+3. **Spend cap:** hard monthly usage ceiling enforced in supervisor before launch.
+4. **Kill switch:** a `state/PAUSED` sentinel file that supervisor checks first and refuses to run if present.
+
+## Implemented hardening
+- **Filesystem sandbox:** the user-level systemd service now enables `NoNewPrivileges`, `PrivateTmp`, `ProtectSystem=strict`, `ProtectHome=read-only`, and explicit `ReadWritePaths` for the bot repo and Claude local state. This narrows the blast radius of `--dangerously-skip-permissions` while preserving the repo-as-memory workflow.
 
 ## Kill switch (implement-now candidate)
 `touch state/PAUSED` halts all cycles; supervisor exits early if it exists. Trivial, high-value. Tracked as a task.

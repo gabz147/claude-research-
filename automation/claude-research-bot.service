@@ -13,6 +13,14 @@ Environment=PATH=/home/tar/.local/bin:/usr/local/bin:/usr/bin:/bin
 # A cycle should not run forever; supervisor also enforces its own timeout.
 TimeoutStartSec=3600
 Nice=10
+# Keep full-auto runs scoped to the research bot and local Claude state.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/tar/claude-research-bot /home/tar/.claude /home/tar/.config /home/tar/.local /tmp
+RestrictSUIDSGID=true
+LockPersonality=true
 
 [Install]
 WantedBy=default.target
