@@ -81,7 +81,7 @@ rc=$?
 set -e 2>/dev/null || true
 
 # ---- interpret result ---------------------------------------------------
-if grep -qiE 'usage limit|session limit|rate limit|reached your (usage|limit)|too many requests' "$RUN_LOG"; then
+if grep -qiE 'usage limit|rate.?limit|reached your (usage|limit)|too many requests|session limit|hit your .*limit|limit .*reset|overloaded|quota' "$RUN_LOG"; then
   back="$(cfg_get '.limits.usage_limit_backoff_minutes')"; back="${back:-60}"
   until_ts="$(date -u -d "+${back} minutes" +%Y-%m-%dT%H:%M:%SZ)"
   state_set ".usage_limit_until=\"$until_ts\""

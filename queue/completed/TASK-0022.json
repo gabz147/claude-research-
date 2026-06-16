@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0022",
+  "priority": "HIGH",
+  "status": "COMPLETED",
+  "description": "Net-new discovery (ADR-015 doctrine): construction delay/change-order claim-defense documentation — both-sides vacuum check",
+  "dependencies": [],
+  "created": "2026-06-16T12:15:43Z",
+  "updated": "2026-06-16T12:18:34Z",
+  "owner": "Researcher",
+  "confidence": "MED",
+  "effort": "M",
+  "notes": ""
+}

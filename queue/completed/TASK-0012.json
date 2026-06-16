@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0012",
+  "priority": "LOW",
+  "status": "COMPLETED",
+  "description": "Reconcile stale scoring weights: templates/OPPORTUNITY.md and skills/opportunity-research/SKILL.md still show old Pain20/AI15 rubric; update both to ADR-008 (Pain25/Spend20/Freq15/CompWk15/Defens15/AI10) to match MISSION.md + opportunity-engine.md",
+  "dependencies": [],
+  "created": "2026-06-15T19:49:36Z",
+  "updated": "2026-06-16T02:03:55Z",
+  "owner": "Researcher",
+  "confidence": "MED",
+  "effort": "M",
+  "notes": ""
+}

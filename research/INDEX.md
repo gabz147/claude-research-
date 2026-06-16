@@ -1,31 +1,15 @@
-# RESEARCH INDEX
+# Research Index
 
-> Human-readable map of all opportunities. **Generated** from `opportunity_registry.json`
-> by `scripts/registry.sh reindex` — do not hand-edit. Registry is authoritative.
-> Last generated: 2026-06-01T05:37:22Z · Total tracked: **0**
+Generated: 2026-06-16T20:00:59Z
 
-## Counts by status
-_(registry empty — no opportunities investigated yet)_
-
-## Master ledger
-
-| ID | Name | Industry | Status | Score | Conf | Last reviewed |
-|----|------|----------|--------|-------|------|---------------|
-
-## ACTIVE
-_(none)_
-
-## VALIDATED
-_(none)_
-
-## EXECUTION
-_(none)_
-
-## ARCHIVED
-_(none)_
-
-## REJECTED
-_(none)_
-
-## Market maps
-_(none yet — create from templates/MARKET_MAP.md before researching a market)_
+- [OPPORTUNITY LEDGER](OPPORTUNITIES.md)
+- [TASK-0003 — IRA Prevailing-Wage & Apprenticeship (PWA) Compliance for Clean-Energy Projects](TASK-0003-ira-pwa-compliance.md)
+- [TASK-0003b — IRA PWA Audit-Defense & Penalty-Remediation (policy-insulated sub-wedge of OPP-001)](TASK-0003b-ira-audit-defense.md)
+- [TASK-0013 — Validation findings: IRA PWA audit-defense (project 01)](TASK-0013-validation-ira-audit-defense.md)
+- [OPPORTUNITY — PFAS liability record-reconstruction & PRP / litigation-defense tooling](TASK-0015-pfas-liability-reconstruction.md)
+- [OPPORTUNITY — SEC cyber-incident materiality-determination & disclosure-defense](TASK-0016-sec-cyber-materiality.md)
+- [OPPORTUNITY — EU Pay Transparency Directive: contemporaneous per-decision pay-justification defense record](TASK-0018-eu-pay-transparency.md)
+- [TASK-0019 / OPP-005 — Ocean-freight Demurrage & Detention (D&D) overcharge dispute & recovery](TASK-0019-demurrage-detention-recovery.md)
+- [TASK-0022 — Construction delay / change-order claim-defense documentation (OPP-006)](TASK-0022-construction-delay-claim-defense.md)
+- [TASK-0023 / OPP-007 — Legacy industrial control-system logic comprehension & documentation](TASK-0023-legacy-plc-control-logic-comprehension.md)
+- [TASK-0024 / OPP-008 — Specialty-insurance MGA/program for emerging hard-to-place lithium-ion / battery-energy-storage (BESS) commercial risk](TASK-0024-bess-specialty-insurance-mga.md)

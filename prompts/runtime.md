@@ -44,10 +44,10 @@ Open the leading `projects/<slug>/PROJECT.md`, advance exactly one gate per `pro
 Make the change. Keep it simple and observable. Add/Update docs. Validate (run it, test it, read it back) — never assume success.
 
 ## 3. Validate (never assume)
-Confirm: files exist, commands ran, output is correct, JSON is valid (`jq -e . state/current_state.json`). If you claimed a test passed, show it actually did.
+Confirm: files exist, commands ran, output is correct, JSON is valid (`jq -e . state/current_state.json`). Run `scripts/verify_cycle.sh` before closing any task, or record in `REPORT.md` why the verifier does not apply. If you claimed a test passed, show it actually did.
 
 ## 4. Close the task
-- Success → `scripts/task.sh move <ID> completed`; post a summary to `completed`.
+- Success → run `scripts/verify_cycle.sh`; only then `scripts/task.sh move <ID> completed`; post a summary to `completed`.
 - Failure → `scripts/task.sh move <ID> failed`; record why in the task notes + `DECISIONS.md`; post to `alerts`.
 
 ## 5. Autonomous Research Mode (when no task is queued)

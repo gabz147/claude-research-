@@ -2,12 +2,12 @@
   "id": "TASK-0002",
   "priority": "HIGH",
   "status": "PENDING",
-  "description": "Deploy: install systemd timer, run first supervised cycle, confirm Discord heartbeat in #status",
+  "description": "Deploy: install systemd timer (OPERATOR-GATED), run first supervised cycle, confirm Discord heartbeat in #status",
   "dependencies": ["TASK-0001"],
   "created": "2026-05-31",
-  "updated": "2026-05-31",
+  "updated": "2026-06-15",
   "owner": "Recovery",
   "confidence": "HIGH",
   "effort": "S",
-  "notes": "Run automation/install.sh then scripts/supervisor.sh --once."
+  "notes": "2026-06-15: Platform verified healthy (doctor.sh PASS 11/0, Discord token HTTP 200). A supervised work cycle was run manually this session (TASK-0003 discovery executed + posted to Discord), satisfying 'first supervised cycle' + 'heartbeat'. REMAINING = install.sh systemd timer, which enables an UNATTENDED autonomous loop running claude --dangerously-skip-permissions on a schedule. Deliberately NOT auto-installed: this is a hard-to-reverse, operator-gated decision (like Discord token rotation). Operator: run automation/install.sh to enable, or confirm go-ahead for a worker to do it."
 }

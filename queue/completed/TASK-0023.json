@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0023",
+  "priority": "HIGH",
+  "status": "DONE",
+  "description": "Net-new discovery (UN-SEEDED, ADR-017): comprehension/documentation of undocumented legacy industrial control-system logic (PLC/SCADA/DCS) when original integrator is gone — orphaned OT/IT seam, risk/labor-borne, high-ticket asset-heavy buyer. Vacuum-check both sides FIRST, then score.",
+  "dependencies": [],
+  "created": "2026-06-16T13:26:35Z",
+  "updated": "2026-06-16T16:30:00Z",
+  "owner": "Researcher",
+  "confidence": "HIGH",
+  "effort": "M",
+  "notes": "OPP-007 scored 54/100 -> ARCHIVE (killed at both-sides vacuum screen; comprehension side owned by Copia AI, capture side by Octoplant/SDA). 7th consecutive cap. Load-bearing meta-finding -> ADR-018: all 7 caps are the same 'AI-comprehends-the-artifact' archetype, structurally undefensible (AI commoditizes it; repository-owner absorbs it). New FIRST screen: 'strip out the AI -> is there still a business?'"
+}

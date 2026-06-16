@@ -14,7 +14,7 @@ The useful upgrade is not a new framework. It is making the existing loop more e
 | Agent acts | `claude -p prompts/bootstrap.md` then `prompts/runtime.md` |
 | Result checked | `prompts/runtime.md` validation step, `rules/self-audit.md`, `scripts/doctor.sh` preflight |
 | State updated | `STATUS.md`, `NEXT_ACTION.md`, `COMPRESSED_CONTEXT.md`, `REPORT.md`, `state/current_state.json` |
-| Repeat trigger | systemd timer or cron via `automation/` |
+| Repeat trigger | AFK window runner, systemd timer, or cron via `automation/` |
 | Stop condition | one bounded cycle, supervisor timeout, task completion/failure, usage-limit backoff |
 | Memory | repo-backed Markdown + JSON; Discord is observability only |
 | Connectors | Discord REST, web/source ingestion, git, jq, shell scripts |
@@ -62,7 +62,7 @@ Use staged autonomy rather than jumping straight to full-auto changes:
 | --- | --- | --- |
 | L1 Suggest | Agent proposes next actions | Already possible through reports |
 | L2 Draft | Agent writes artifacts but does not act externally | Good for research and plans |
-| L3 Act with approval | Agent runs cycles; human reviews Discord/git | Current deployment target |
+| L3 Act with approval | Agent runs cycles; human reviews Discord/git | Current AFK/deployment target |
 | L4 Fully autonomous | Agent executes and closes work unattended | Only after evaluator gates are reliable |
 
 ## Non-goals

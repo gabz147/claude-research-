@@ -2,27 +2,35 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-TMPDIR="$(mktemp -d)"
-trap 'rm -rf "$TMPDIR"' EXIT
+TMP="$(mktemp -d)"
+trap 'rm -rf "$TMP"' EXIT
+mkdir -p "$TMP/queue/pending" "$TMP/queue/active" "$TMP/queue/completed" "$TMP/queue/failed" "$TMP/logs"
 
-cp -a "$ROOT/." "$TMPDIR/repo"
-cd "$TMPDIR/repo"
-
-id="$(scripts/task.sh new HIGH "queue smoke test")"
+id="$(python3 "$ROOT/scripts/aro.py" --root "$TMP" task new HIGH "queue smoke test")"
 printf '%s' "$id" | grep -Eq '^TASK-[0-9]{4}$'
-test -f "queue/pending/$id.json"
+test -f "$TMP/queue/pending/$id.json"
 
-scripts/task.sh move "$id" active
-test -f "queue/active/$id.json"
-test ! -f "queue/pending/$id.json"
-test "$(jq -r '.status' "queue/active/$id.json")" = "ACTIVE"
+python3 "$ROOT/scripts/aro.py" --root "$TMP" task move "$id" active
+test -f "$TMP/queue/active/$id.json"
+test ! -f "$TMP/queue/pending/$id.json"
+test "$(python3 - "$TMP/queue/active/$id.json" <<'PY'
+import json
+import sys
+print(json.load(open(sys.argv[1]))["status"])
+PY
+)" = "ACTIVE"
 
-scripts/task.sh move "$id" failed
-test -f "queue/failed/$id.json"
-test ! -f "queue/active/$id.json"
-test "$(jq -r '.status' "queue/failed/$id.json")" = "FAILED"
+python3 "$ROOT/scripts/aro.py" --root "$TMP" task move "$id" failed
+test -f "$TMP/queue/failed/$id.json"
+test ! -f "$TMP/queue/active/$id.json"
+test "$(python3 - "$TMP/queue/failed/$id.json" <<'PY'
+import json
+import sys
+print(json.load(open(sys.argv[1]))["status"])
+PY
+)" = "FAILED"
 
-if scripts/task.sh move "$id" missing >/dev/null 2>&1; then
+if python3 "$ROOT/scripts/aro.py" --root "$TMP" task move "$id" missing >/dev/null 2>&1; then
   echo "expected invalid queue state to fail" >&2
   exit 1
 fi

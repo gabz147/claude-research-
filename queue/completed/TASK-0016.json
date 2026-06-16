@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0016",
+  "priority": "HIGH",
+  "status": "COMPLETED",
+  "description": "Net-new discovery cycle (fresh sector) — screen candidates for productization vacuum; score one Blue-Ocean B2B opportunity per ADR-008",
+  "dependencies": [],
+  "created": "2026-06-16T03:12:02Z",
+  "updated": "2026-06-16T05:20:38Z",
+  "owner": "Researcher",
+  "confidence": "MED",
+  "effort": "M",
+  "notes": ""
+}

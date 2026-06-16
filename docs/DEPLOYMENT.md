@@ -19,6 +19,29 @@ Expect all ✅ and `FAIL=0`. Fixes:
 - ❌ claude CLI → ensure `~/.local/bin` on PATH.
 - ❌ bot token → token invalid/expired; rotate.
 
+## Safe live update
+Use this procedure before changing the running checkout on the VM:
+
+```bash
+cd /home/tar/claude-research-bot
+touch state/PAUSED
+scripts/supervisor.sh --dry     # should refuse to run while paused
+
+# make the change, then verify locally
+python3 -m unittest discover -s tests -p 'test_*.py'
+bash tests/task_queue.sh
+bash -n scripts/*.sh
+scripts/verify_cycle.sh
+scripts/doctor.sh
+
+git status --short
+git add <changed-files>
+git commit -m "<type>: <summary>"
+rm state/PAUSED                 # resume the next scheduled tick
+```
+
+Do not run `supervisor.sh --once` during a Claude usage-limit backoff unless the goal is to consume that next available cycle immediately.
+
 ## 3. Smoke test (no scheduler yet)
 ```bash
 scripts/supervisor.sh --dry     # tests lock + preflight + Discord, skips Claude

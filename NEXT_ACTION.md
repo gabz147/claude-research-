@@ -4,11 +4,8 @@
 
 ## Do this next
 
-**Action:** Verify the platform end-to-end, then pick the highest-priority task from `queue/pending/` and run one research cycle per `prompts/runtime.md`.
+**Action:** Continue net-new discovery under the current doctrine stack now that `TASK-0025` evaluator gates are implemented.
 
-**Concretely:**
-1. Run `scripts/doctor.sh` — confirm token, channels, claude CLI, jq all OK.
-2. Run `scripts/supervisor.sh --once` manually once and confirm a Discord post lands in #📊-status.
-3. Move `queue/pending/TASK-0003*` (first real research task) → active, execute one research cycle.
+**Concretely:** pick one new owned-position B2B opportunity and run the screens in order: ADR-018 strip-out-the-AI, ADR-015 both-sides vacuum check, ADR-019 owned-position filter. Do not re-run already-scored sectors. Use `scripts/verify_cycle.sh` before closing the task.
 
-**Acceptance check:** A research note exists in `research/`, REPORT.md updated, Discord #🔬-research-feed shows a summary, state files updated, lock released.
+**Acceptance check:** one new scored research record exists, ledgers and state files are updated, `scripts/verify_cycle.sh` passes or any exception is recorded in `REPORT.md`, Discord summary posted, changes committed.

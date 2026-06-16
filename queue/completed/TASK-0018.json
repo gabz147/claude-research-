@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0018",
+  "priority": "HIGH",
+  "status": "COMPLETED",
+  "description": "Net-new discovery (vacuum-screened, TASK-0017 heuristic): screen just-landed forcing-functions + defensive sub-wedges; deep-dive winner; score per ADR-008",
+  "dependencies": [],
+  "created": "2026-06-16T06:25:05Z",
+  "updated": "2026-06-16T06:30:04Z",
+  "owner": "Researcher",
+  "confidence": "MED",
+  "effort": "M",
+  "notes": ""
+}

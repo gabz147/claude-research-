@@ -14,10 +14,10 @@ Problem description · Affected customer · Current solution · Pain level · Fr
 ## Scoring (0–100) — score EVERY opportunity
 | Dimension | Range | Scoring guidance |
 |---|---|---|
-| Pain Severity | 0–20 | 20 = mission-critical, bleeding money/risk now |
+| Pain Severity | 0–25 | 25 = mission-critical, bleeding money/risk now |
 | Buyer Spending Power | 0–20 | 20 = can pay $10k+/yr without friction |
 | Frequency | 0–15 | 15 = continuous/recurring problem |
-| AI Leverage | 0–15 | 15 = AI creates step-change in cost/accuracy/speed |
+| AI Leverage | 0–10 | 10 = AI creates step-change in cost/accuracy/speed |
 | Competitive Weakness | 0–15 | 15 = incumbents weak, hated, or absent |
 | Defensibility | 0–15 | 15 = durable moat (data, integration, workflow lock-in) |
 

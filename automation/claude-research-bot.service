@@ -5,11 +5,11 @@ Wants=network-online.target
 
 [Service]
 Type=oneshot
-WorkingDirectory=/home/gabrielmarquez147/claude-research-work
-ExecStart=/home/gabrielmarquez147/claude-research-work/scripts/supervisor.sh
+WorkingDirectory=/home/tar/claude-research-bot
+ExecStart=/home/tar/claude-research-bot/scripts/supervisor.sh
 # claude CLI lives in ~/.local/bin
-Environment=HOME=/home/gabrielmarquez147
-Environment=PATH=/home/gabrielmarquez147/.local/bin:/usr/local/bin:/usr/bin:/bin
+Environment=HOME=/home/tar
+Environment=PATH=/home/tar/.local/bin:/usr/local/bin:/usr/bin:/bin
 # A cycle should not run forever; supervisor also enforces its own timeout.
 TimeoutStartSec=3600
 Nice=10
@@ -18,7 +18,7 @@ NoNewPrivileges=true
 PrivateTmp=true
 ProtectSystem=strict
 ProtectHome=read-only
-ReadWritePaths=/home/gabrielmarquez147/claude-research-work /home/gabrielmarquez147/.claude /home/gabrielmarquez147/.config /home/gabrielmarquez147/.local /tmp
+ReadWritePaths=/home/tar/claude-research-bot /home/tar/.claude /home/tar/.config /home/tar/.local /tmp
 RestrictSUIDSGID=true
 LockPersonality=true
 
