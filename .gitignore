@@ -13,3 +13,6 @@ state/*.lock
 # OS / editor
 .DS_Store
 *.swp
+
+# Stray external symlinks (not part of repo memory)
+cr-bot
