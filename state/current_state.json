@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "project": "claude-research-bot",
-  "current_objective": "Net-new discovery cycle (runtime priority 3, project 01 operator-gated): applied TASK-0017 heuristic to pick EU Pay Transparency Directive (2023/970) — just-landed forcing-function (transposition 7 Jun 2026) + Art. 18 burden-of-proof reversal as a candidate defensive sub-wedge (per-decision pay-justification defense record). KILLED at the vacuum screen before deep research (ADR-012 discipline). Scored OPP-004 at 63/100 -> ARCHIVE (first Archived row). Disprove won: pay-equity analytics incumbents (Syndio PayEQ, beqom/PayAnalytics, Trusaic) already own 'defensible documentation' + are explicitly EU-PTD-positioned; HRIS/comp stack owns the point-of-decision workflow; enforcement staggered (DE/FR/NL/ES/Sweden -> 2027); directive telegraphed since 2023 so the 2026 effective date left no vacuum. 4th consecutive compliance-forcing-function to cap (79/71/72/63). Refined TASK-0017 (ADR-014): 'just-landed' must mean novel/surprising obligation, not recent effective date; 'pick the newest regulation' is itself becoming an anti-pattern -> next cycle leave regulatory-compliance OR pass an affirmative named-incumbent vacuum check first. Still no 2nd >=80 project; project 01 still HOLD/operator-gated.",
-  "current_phase": "PHASE 1 (discovery). Project 01 in VALIDATION HOLD (operator-gated, TASK-0014). Funnel continues net-new opportunity discovery next cycle in a fresh sector, applying the REFINED TASK-0017 heuristic (ADR-014).",
+  "current_objective": "Net-new discovery cycle (runtime priority 3, project 01 operator-gated). This cycle DELIBERATELY LEFT regulatory-compliance (per ADR-014) and picked an operational/financial money-leak: ocean-freight Demurrage & Detention (D&D) overcharge dispute & recovery (importers/BCOs/3PLs; FMC May-2024 billing rule as a tailwind, not the product; targeting the OPP-001b contested-recovery + record-reconstruction shape). KILLED at the vacuum screen before deep research. Scored OPP-005 at 64/100 -> ARCHIVE (second Archived row). Disprove won decisively: the artifact is already shipped on BOTH sides -- prevention/visibility (Windward shipped a dedicated AI 'D&D Automation' product Feb-2025; BuyCo @97% carriers; Cargoo; FourKites; Portcast) AND contested recovery (nVision Global, OceanAudit.com, Cass, STB, Auditec -- a mature contingency freight-audit industry). CompWk 6, Defens 5, AI 5 (commoditized). KEY META (ADR-015): capping a NON-compliance pick FALSIFIES the ADR-014 hypothesis that 'leave compliance' was the fix -- the real binding constraint is VISIBLE/NAMED MONEY POOLS (any pain with a headline $-stat already recruited incumbents on both prevention and recovery), of which compliance regs were just one instance. 5 consecutive caps (79/71/72/63/64) vs the one 83 (OPP-001b, which won on an un-productized sub-wedge, not pool size). Still no 2nd >=80 project; project 01 still HOLD/operator-gated.",
+  "current_phase": "PHASE 1 (discovery). Project 01 in VALIDATION HOLD (operator-gated, TASK-0014). Funnel continues net-new discovery next cycle, now applying the ADR-015 doctrine: universal named-incumbent vacuum check FIRST; de-prioritize visible money pools; hunt fragmented/hidden pain. SEEDED next candidate = construction delay/change-order claim-defense documentation.",
   "current_task": null,
   "active_research": null,
   "leading_project": "01-ira-audit-defense",
@@ -27,15 +27,16 @@
     "TASK-0013",
     "TASK-0015",
     "TASK-0016",
-    "TASK-0018"
+    "TASK-0018",
+    "TASK-0019"
   ],
   "failed_tasks": [],
-  "last_execution": "2026-06-16T06:30:04Z",
+  "last_execution": "2026-06-16T08:40:00Z",
   "last_report": "REPORT.md",
   "confidence": "HIGH",
-  "next_action": "Project 01 still VALIDATION HOLD, operator-gated (TASK-0014). Next autonomous cycle: continue NET-NEW discovery (runtime priority 3), applying the REFINED TASK-0017 heuristic (ADR-014) — either (i) LEAVE regulatory-compliance entirely (operational/financial/contractual pain, clear high-ticket buyer, no dominant incumbent) OR (ii) only enter a compliance regime after passing an AFFIRMATIVE named-incumbent vacuum check (name the incumbents, show the specific artifact none of them sell). Do NOT re-run IRA/PFAS/CBAM/EU-AI-Act/SEC-cyber/EU-Pay-Transparency; do NOT re-desk-validate project 01. See NEXT_ACTION.md.",
+  "next_action": "Project 01 still VALIDATION HOLD, operator-gated (TASK-0014). Next autonomous cycle: continue NET-NEW discovery (runtime priority 3) applying the ADR-015 doctrine — (1) run the UNIVERSAL named-incumbent vacuum check FIRST (both prevention AND recovery side) before any deep research; (2) DE-PRIORITIZE visible/named money pools (any pain with a headline $-stat already recruited incumbents); (3) hunt FRAGMENTED/embarrassing/un-named-budget pain; target shape = contested-defense/record-reconstruction artifact with NO productized owner (the OPP-001b 83 shape). SEEDED leading candidate: construction delay/change-order claim-defense documentation (services-only claims consultants; verify vacuum first). Do NOT re-run IRA/PFAS/CBAM/EU-AI-Act/SEC-cyber/EU-Pay-Transparency/ocean-D&D; do NOT re-desk-validate project 01. See NEXT_ACTION.md.",
   "recovery_status": "CLEAN",
   "consecutive_failures": 0,
-  "usage_limit_until": null,
-  "lock_held": true
+  "usage_limit_until": "2026-06-16T08:40:46Z",
+  "lock_held": false
 }

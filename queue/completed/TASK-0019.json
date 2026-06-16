@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0019",
+  "priority": "HIGH",
+  "status": "COMPLETED",
+  "description": "Net-new discovery (ADR-014: LEFT regulatory-compliance, picked operational/financial money-leakage): ocean-freight demurrage & detention (D&D) overcharge dispute & recovery; vacuum-screen BEFORE deep research; score per ADR-008",
+  "dependencies": [],
+  "created": "2026-06-16T08:05:00Z",
+  "updated": "2026-06-16T08:40:00Z",
+  "owner": "Researcher",
+  "confidence": "MED",
+  "effort": "M",
+  "notes": "Killed at vacuum screen (no deep-dive). OPP-005 scored 64 -> ARCHIVE. Both prevention (BuyCo/Windward/Cargoo/FourKites/Portcast) and recovery (nVision/OceanAudit/Cass/freight-audit contingency) wedges already owned. Triggered ADR-015 (visible-money-pool anti-pattern)."
+}
