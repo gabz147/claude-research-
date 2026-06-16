@@ -38,12 +38,12 @@
     "TASK-0025"
   ],
   "failed_tasks": [],
-  "last_execution": "2026-06-16T18:52:07Z",
+  "last_execution": "2026-06-16T19:52:12Z",
   "last_report": "REPORT.md",
   "confidence": "HIGH",
   "next_action": "Continue net-new discovery under ADR-018/ADR-015/ADR-019 now that TASK-0025 evaluator gates are implemented. Run scripts/verify_cycle.sh before task closure.",
   "recovery_status": "CLEAN",
   "consecutive_failures": 0,
-  "usage_limit_until": "2026-06-16T19:52:11Z",
+  "usage_limit_until": "2026-06-16T20:52:16Z",
   "lock_held": false
 }
