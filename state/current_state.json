@@ -20,7 +20,8 @@
     "TASK-0011",
     "TASK-0017",
     "TASK-0020",
-    "TASK-0021"
+    "TASK-0021",
+    "TASK-0025"
   ],
   "completed_tasks": [
     "TASK-0001",
@@ -36,12 +37,12 @@
     "TASK-0024"
   ],
   "failed_tasks": [],
-  "last_execution": "2026-06-16T18:45:00Z",
+  "last_execution": "2026-06-16T18:52:07Z",
   "last_report": "REPORT.md",
   "confidence": "HIGH",
-  "next_action": "Project 01 still VALIDATION HOLD, operator-gated (TASK-0014). Next autonomous cycle: continue NET-NEW discovery (runtime priority 3) applying the DOCTRINE STACK in sequence. 8 consecutive caps (79/71/72/63/64/58/54/58) vs one 83. OPP-008 (Li-ion/BESS specialty-insurance MGA) was the FIRST owned-position play, built to pass the ADR-018 strip-out-the-AI screen -- and it PASSED that screen (the screen works; it correctly separated this from the documentation archetype) but STILL capped at the vacuum check + two new gates -> passing ADR-018 is NECESSARY but NOT SUFFICIENT (ADR-019). SCREENING ORDER, in sequence, BEFORE deep research: (1) ADR-018 strip-out-the-AI screen -- 'strip out the AI, is there still a business (workflow/transaction/data/channel I own)?' reject documentation artifacts; (2) ADR-015 both-sides named-incumbent vacuum check -- name capture+recovery incumbents, verify no-owner affirmatively; (3) ADR-019 third-stage owned-position filter -- (a) DURABLE vacuum (structural, not a transient hard-market/deadline cycle refilled in 12-24mo), (b) ZERO-STATE moat (originable from the FIRST customers -- network/workflow that compounds immediately; beware cold-start data moats that accrue only to incumbents), (c) BUILDABLE without heavy regulated capital (no charter/licensing/underwriting-capacity barrier). Next candidate must be an owned-position play with a zero-state-originable moat in a structurally unserved niche, buildable without a regulated charter. Do NOT re-run IRA/PFAS/CBAM/EU-AI-Act/SEC-cyber/EU-Pay-Transparency/ocean-D&D/construction-claims/legacy-PLC-comprehension/Li-ion-BESS-insurance; do NOT pick another documentation/reconstruction/comprehension artifact; do NOT pick a regulated-capital business (MGA/lender/insurer) unless it uniquely clears gate (c); do NOT re-desk-validate project 01. See NEXT_ACTION.md.",
+  "next_action": "Execute TASK-0025 before another discovery cycle: implement evaluator-loop gates (acceptance fields, scripts/verify_cycle.sh, runtime completion rule).",
   "recovery_status": "CLEAN",
   "consecutive_failures": 0,
-  "usage_limit_until": null,
-  "lock_held": true
+  "usage_limit_until": "2026-06-16T19:52:11Z",
+  "lock_held": false
 }
