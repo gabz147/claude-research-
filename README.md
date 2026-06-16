@@ -60,6 +60,26 @@ automation/install.sh
 
 `doctor.sh` validates local dependencies and configuration. `supervisor.sh --dry` checks the automation path without launching Claude. `supervisor.sh --once` runs a real cycle. `automation/install.sh` installs the user-level systemd timer.
 
+## Usage Limits & Resets
+
+When Claude's usage/session limit is hit, the bot backs off until the quota resets, then resumes automatically. To check the exact reset time:
+
+- **Interactive Claude Code session:** run `/usage` — shows your plan limits and when each resets.
+- **From the bot's logs** (the reset Claude reported on the last limit hit):
+
+  ```bash
+  grep -h resets logs/cycle-*.log | tail -1
+  # e.g. You've hit your session limit · resets 2:20am (UTC)
+  ```
+
+- **The backoff the bot is currently honoring:**
+
+  ```bash
+  jq -r '.usage_limit_until' state/current_state.json
+  ```
+
+`supervisor.sh` parses the `resets ... (UTC)` line from Claude's output and backs off to that exact instant (falling back to `limits.usage_limit_backoff_minutes` only if it cannot parse one), and `automation/afk_window.sh` sleeps until that time — so the bot resumes the moment quota returns instead of guessing a fixed hour.
+
 ## Operating Principles
 
 - **Repo is truth.** Discord and derived memory are mirrors.
