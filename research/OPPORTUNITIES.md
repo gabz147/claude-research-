@@ -6,6 +6,21 @@
 
 **Scoring weights:** ADR-008 — Pain **25** · Spend **20** · Freq **15** · CompWk **15** · Defens **15** · AI **10**.
 
+> **Authoritative registry (ADR-021, 2026-06-16):** the master record of every opportunity is now `research/opportunity_registry.json`, written ONLY via `scripts/registry.sh`. `research/INDEX.md` is **generated** from it (do not hand-edit). This prose ledger is kept as the **rich human narrative** (full kill-reasons + doctrine trail); it is no longer the system of record. All `OPP-00N` ids below are the legacy short ids; the canonical ids are `OPP-2026-NNN` per the crosswalk.
+>
+> **Legacy → canonical id crosswalk:**
+> | Legacy | Canonical | Score | Status | Project |
+> |--------|-----------|-------|--------|---------|
+> | OPP-001 | OPP-2026-001 | 79 | MONITORING | — |
+> | OPP-001b | OPP-2026-002 | 83 | VALIDATING (HOLD) | 01-ira-audit-defense |
+> | OPP-002 | OPP-2026-003 | 71 | MONITORING | — |
+> | OPP-003 | OPP-2026-004 | 72 | MONITORING | — |
+> | OPP-004 | OPP-2026-005 | 63 | ARCHIVED | — |
+> | OPP-005 | OPP-2026-006 | 64 | ARCHIVED | — |
+> | OPP-006 | OPP-2026-007 | 58 | ARCHIVED | — |
+> | OPP-007 | OPP-2026-008 | 54 | ARCHIVED | — |
+> | OPP-008 | OPP-2026-009 | 58 | ARCHIVED | — |
+
 | Date | ID | Opportunity (1-line) | Sector | Pain/25 | Spend/20 | Freq/15 | CompWk/15 | Defens/15 | AI/10 | **Score** | Gate | Project | Conf |
 |------|----|----|--------|-----|-------|------|--------|--------|----|-------|------|---------|------|
 | 2026-06-15 | OPP-001b | IRA PWA **audit-defense & penalty-remediation** for already-claimed 2023–2025 vintage credits (policy-insulated re-frame of OPP-001) | Compliance / tax controversy / clean-energy | 24 | 19 | 10 | 11 | 12 | 7 | **83** | VALIDATION → **HOLD** (TASK-0013/ADR-011: not disproved, not HIGH; WTP+audit-volume need primary discovery) | 01-ira-audit-defense | MED |

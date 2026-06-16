@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "project": "claude-research-bot",
-  "current_objective": "Net-new discovery cycle (runtime priority 3, project 01 operator-gated). Ran the org's FIRST deliberately OWNED-POSITION candidate (TASK-0024), built to pass the ADR-018 strip-out-the-AI screen: a specialty-insurance MGA/program for emerging hard-to-place lithium-ion / BESS commercial fire risk -- an MGA owns distribution + sits in the underwriting transaction (commission/profit-share) + accumulates proprietary loss data, with AI as the underwriting tool not the product. It PASSED the ADR-018 lead screen (first candidate to do so -- strip out the AI and an MGA is still a business; NOT the documentation archetype) then was KILLED at the second-stage both-sides vacuum check -> OPP-008 scored 58/100 -> ARCHIVE (fifth Archived row; 8th consecutive cap 79/71/72/63/64/58/54/58). Three gates sank it: (1) placement wedge owned -- NARDAC (Amwins MGA) secured BESS binding authority Mar-2024, $50M from 8 Lloyd's syndicates; Amwins BESS product line; Travelers writes the class; BikeInsure owns micromobility fleets; (2) the vacuum is a TRANSIENT hard-market cycle, not structural -- energy insurance enters 2026 with renewed competition/capacity returning; (3) the moat fails twice -- AI underwriting is a commoditized purchasable platform (hyperexponential/Earnix/Federato; table stakes), and the loss-data moat is a COLD-START that accrues only to incumbents (NARDAC 2yr, Federato 20yr datasets); plus an MGA needs regulated binding authority/capital = un-buildable by a small org. CompWk 4, Defens 3, AI 5. LOAD-BEARING META (ADR-019, REFINES ADR-018, does not supersede it): the first owned-position play PASSED ADR-018 and STILL capped -> passing the strip-out-the-AI screen is NECESSARY but NOT SUFFICIENT. Add a THIRD-STAGE owned-position filter. Still no 2nd >=80 project; project 01 still HOLD/operator-gated.",
-  "current_phase": "PHASE 1 (discovery). Project 01 in VALIDATION HOLD (operator-gated, TASK-0014). Funnel continues net-new discovery next cycle. DOCTRINE STACK (apply in sequence BEFORE deep research): (1) ADR-018 strip-out-the-AI screen (FIRST) -- 'strip out the AI, is there still a business: a workflow I own, a transaction I sit in, data only I have, a channel only I reach?' If the product IS the AI reading documents, reject. (2) ADR-015 both-sides named-incumbent vacuum check -- name capture+recovery incumbents; verify no-owner affirmatively. (3) ADR-019 third-stage owned-position filter (NEW -- OPP-008 passed (1) and still capped): (a) DURABLE vacuum (structural, not a transient hard-market/deadline cycle incumbents refill in 12-24 months); (b) ZERO-STATE moat (originable from the FIRST customers -- network/workflow lock-in that compounds immediately; beware cold-start data moats that accrue only to the incumbent); (c) BUILDABLE without heavy regulated capital (no charter/licensing/underwriting-capacity/balance-sheet barrier). Next candidate: owned-position play, zero-state-originable moat, structurally unserved niche, buildable without a regulated charter.",
+  "current_objective": "Stabilization/handoff-integrity cycle (NOT a 9th discovery), per ADR-022. Discovered that research/opportunity_registry.json -- declared authoritative/binding by rules/research-dedup.md + bootstrap + runtime (Step-0 DEDUP CHECKPOINT) -- was initialized 2026-06-01 and NEVER populated (opportunities: []). Two harms: (1) the mandatory registry.sh search dedup checkpoint returned (none) for every term -> non-functional, risking rediscovery of killed ideas; (2) the mandated handoff registry.sh reindex would have OVERWRITTEN the hand-maintained research/INDEX.md with an empty index. Fixed: backfilled all 9 evaluated opportunities into the registry via the only supported write path (registry.sh add), minting canonical OPP-2026-001..009 in discovery order, linked each to its existing research/TASK-*.md detail file, and let reindex regenerate INDEX.md (5 ARCHIVED / 3 MONITORING / 1 VALIDATING). Recorded a legacy OPP-00N -> OPP-2026-NNN crosswalk in OPPORTUNITIES.md (now the rich narrative, no longer the system of record). Also fixed the stale ADR-008 rubric header in the registry.sh stub template. Verified: registry.sh search now returns hits; list shows 9; JSON valid. No new opportunity scored this cycle -- the memory substrate that future discovery depends on is now sound.",
+  "current_phase": "PHASE 1 (discovery), on a now-sound memory substrate. Project 01 = VALIDATION HOLD (operator-gated, TASK-0014). The authoritative registry is populated and the dedup checkpoint is functional. Next cycle resumes net-new discovery under the doctrine stack ADR-018 (strip-out-the-AI) -> ADR-015 (both-sides vacuum check) -> ADR-019 (third-stage owned-position filter: durable vacuum + zero-state moat + buildable-without-regulated-capital). Step-0 dedup checkpoint (registry.sh search) and Step-4 registry handoff (registry.sh add|update + reindex) now work as designed.",
   "current_task": null,
   "active_research": null,
   "leading_project": "01-ira-audit-defense",
@@ -21,7 +21,8 @@
     "TASK-0017",
     "TASK-0020",
     "TASK-0021",
-    "TASK-0026"
+    "TASK-0026",
+    "TASK-0028"
   ],
   "completed_tasks": [
     "TASK-0001",
@@ -35,15 +36,16 @@
     "TASK-0022",
     "TASK-0023",
     "TASK-0024",
-    "TASK-0025"
+    "TASK-0025",
+    "TASK-0027"
   ],
   "failed_tasks": [],
-  "last_execution": "2026-06-16T19:52:12Z",
+  "last_execution": "2026-06-16T21:46:21Z",
   "last_report": "REPORT.md",
   "confidence": "HIGH",
-  "next_action": "Continue net-new discovery under ADR-018/ADR-015/ADR-019 now that TASK-0025 evaluator gates are implemented. Run scripts/verify_cycle.sh before task closure.",
+  "next_action": "Resume net-new discovery under ADR-018 -> ADR-015 -> ADR-019. Run scripts/registry.sh search BEFORE researching (dedup checkpoint is now functional) and scripts/verify_cycle.sh before task closure. Do NOT re-run any of the 9 backfilled sectors (see research/INDEX.md / registry). Target an owned-position play with a zero-state-originable moat in a structurally unserved niche, buildable without a regulated charter.",
   "recovery_status": "CLEAN",
   "consecutive_failures": 0,
-  "usage_limit_until": "2026-06-16T20:52:16Z",
-  "lock_held": false
+  "usage_limit_until": null,
+  "lock_held": true
 }

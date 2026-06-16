@@ -1,6 +1,235 @@
 {
   "schema_version": 1,
-  "updated": "2026-06-01T05:37:22Z",
+  "updated": "2026-06-16T21:44:08Z",
   "id_format": "OPP-YYYY-NNN",
-  "opportunities": []
+  "opportunities": [
+    {
+      "id": "OPP-2026-001",
+      "name": "IRA PWA preventive compliance for clean-energy projects",
+      "industry": "Compliance / clean-energy tax",
+      "problem_category": "Protect the 5x IRA tax-credit multiplier by proving prevailing-wage and apprenticeship compliance on clean-energy construction",
+      "status": "MONITORING",
+      "score": 79,
+      "confidence": "MED",
+      "discovery_date": "2026-06-16T21:43:47Z",
+      "last_reviewed": "2026-06-16T21:44:01Z",
+      "related": [],
+      "research_files": [
+        "research/active/OPP-2026-001-ira-pwa-preventive-compliance-for-clean-energy-pro.md",
+        "research/TASK-0003-ira-pwa-compliance.md"
+      ],
+      "reasoning": "Legacy OPP-001. 79 MONITOR; superseded by audit-defense re-frame OPP-2026-002. Capped by forming competition with distribution (DSPTCH/eBacon/Reunion/Crux) plus IRA policy risk. Detail: research/TASK-0003-ira-pwa-compliance.md",
+      "similarity": {
+        "problem": "",
+        "customer": "",
+        "workflow": "",
+        "economics": "",
+        "solution": "",
+        "market": ""
+      }
+    },
+    {
+      "id": "OPP-2026-002",
+      "name": "IRA PWA audit-defense and penalty-remediation",
+      "industry": "Compliance / tax controversy / clean-energy",
+      "problem_category": "Defend and remediate already-claimed 2023-2025 vintage IRA prevailing-wage and apprenticeship credits under IRS audit (Forms 7220/4255); transferees independently liable",
+      "status": "VALIDATING",
+      "score": 83,
+      "confidence": "MED",
+      "discovery_date": "2026-06-16T21:43:47Z",
+      "last_reviewed": "2026-06-16T21:44:02Z",
+      "related": [
+        "OPP-2026-001"
+      ],
+      "research_files": [
+        "research/active/OPP-2026-002-ira-pwa-audit-defense-and-penalty-remediation.md",
+        "research/TASK-0003b-ira-audit-defense.md",
+        "research/TASK-0013-validation-ira-audit-defense.md"
+      ],
+      "reasoning": "Legacy OPP-001b. 83 VALIDATION then HOLD (ADR-011/TASK-0013): not disproved, not HIGH; WTP vs law firms and real audit-notice volume need operator-gated primary discovery (TASK-0014). Only >=80 lead; project projects/01-ira-audit-defense. Detail: research/TASK-0013-validation-ira-audit-defense.md",
+      "similarity": {
+        "problem": "",
+        "customer": "",
+        "workflow": "",
+        "economics": "",
+        "solution": "",
+        "market": ""
+      }
+    },
+    {
+      "id": "OPP-2026-003",
+      "name": "PFAS liability record-reconstruction and PRP litigation-defense",
+      "industry": "Environmental liability / litigation support",
+      "problem_category": "Reconstruct historical PFAS usage and disposal records for CERCLA PFOA/PFOS PRP allocation and TSCA 8(a)(7) retrospective reporting defense",
+      "status": "MONITORING",
+      "score": 71,
+      "confidence": "MED",
+      "discovery_date": "2026-06-16T21:43:48Z",
+      "last_reviewed": "2026-06-16T21:44:03Z",
+      "related": [],
+      "research_files": [
+        "research/active/OPP-2026-003-pfas-liability-record-reconstruction-and-prp-litig.md",
+        "research/TASK-0015-pfas-liability-reconstruction.md"
+      ],
+      "reasoning": "Legacy OPP-002. 71 MONITOR; capped by >=8 entrenched forensic incumbents (Exponent/ERM/WSP/Battelle); TSCA reporting slipped to 2027. Detail: research/TASK-0015-pfas-liability-reconstruction.md",
+      "similarity": {
+        "problem": "",
+        "customer": "",
+        "workflow": "",
+        "economics": "",
+        "solution": "",
+        "market": ""
+      }
+    },
+    {
+      "id": "OPP-2026-004",
+      "name": "SEC cyber-incident materiality-determination and disclosure-defense",
+      "industry": "Securities-law / cyber-disclosure controversy",
+      "problem_category": "Document the materiality determination and disclosure-control consistency for SEC Item 1.05 4-day cyber-incident reporting and Reg S-K Item 106",
+      "status": "MONITORING",
+      "score": 72,
+      "confidence": "MED",
+      "discovery_date": "2026-06-16T21:43:49Z",
+      "last_reviewed": "2026-06-16T21:44:04Z",
+      "related": [],
+      "research_files": [
+        "research/active/OPP-2026-004-sec-cyber-incident-materiality-determination-and-d.md",
+        "research/TASK-0016-sec-cyber-materiality.md"
+      ],
+      "reasoning": "Legacy OPP-003. 72 MONITOR; capped by active Item-1.05 rescission risk, forming competition (Kovrr/FAIR-MAM), episodic frequency. Detail: research/TASK-0016-sec-cyber-materiality.md",
+      "similarity": {
+        "problem": "",
+        "customer": "",
+        "workflow": "",
+        "economics": "",
+        "solution": "",
+        "market": ""
+      }
+    },
+    {
+      "id": "OPP-2026-005",
+      "name": "EU Pay Transparency Directive pay-justification defense record",
+      "industry": "EU employment-law / pay-equity compliance",
+      "problem_category": "Produce contemporaneous per-decision gender-neutral pay-justification records to meet the Art. 18 burden-of-proof reversal under Directive 2023/970",
+      "status": "ARCHIVED",
+      "score": 63,
+      "confidence": "MED",
+      "discovery_date": "2026-06-16T21:43:49Z",
+      "last_reviewed": "2026-06-16T21:44:05Z",
+      "related": [],
+      "research_files": [
+        "research/archived/OPP-2026-005-eu-pay-transparency-directive-pay-justification-de.md",
+        "research/TASK-0018-eu-pay-transparency.md"
+      ],
+      "reasoning": "Legacy OPP-004. 63 ARCHIVE (ADR-014); killed at vacuum screen: Syndio/beqom/Trusaic own defensible-documentation, HRIS owns workflow, staggered enforcement to 2027. Detail: research/TASK-0018-eu-pay-transparency.md",
+      "similarity": {
+        "problem": "",
+        "customer": "",
+        "workflow": "",
+        "economics": "",
+        "solution": "",
+        "market": ""
+      }
+    },
+    {
+      "id": "OPP-2026-006",
+      "name": "Ocean-freight demurrage and detention overcharge dispute and recovery",
+      "industry": "Logistics / freight cost-recovery",
+      "problem_category": "Detect and recover erroneous ocean-freight demurrage and detention charges for importers, BCOs and 3PLs under the FMC May-2024 billing rule",
+      "status": "ARCHIVED",
+      "score": 64,
+      "confidence": "MED",
+      "discovery_date": "2026-06-16T21:43:50Z",
+      "last_reviewed": "2026-06-16T21:44:05Z",
+      "related": [],
+      "research_files": [
+        "research/archived/OPP-2026-006-ocean-freight-demurrage-and-detention-overcharge-d.md",
+        "research/TASK-0019-demurrage-detention-recovery.md"
+      ],
+      "reasoning": "Legacy OPP-005. 64 ARCHIVE (ADR-015); both wedges owned: prevention (Windward/BuyCo/Cargoo/FourKites) and recovery (nVision/OceanAudit/Cass). First non-compliance cap -> binding constraint is visible money pool. Detail: research/TASK-0019-demurrage-detention-recovery.md",
+      "similarity": {
+        "problem": "",
+        "customer": "",
+        "workflow": "",
+        "economics": "",
+        "solution": "",
+        "market": ""
+      }
+    },
+    {
+      "id": "OPP-2026-007",
+      "name": "Construction delay and change-order claim-defense documentation",
+      "industry": "Construction disputes / forensic claims",
+      "problem_category": "Assemble schedule, RFI, daily-log and change-order trails to win or defend construction delay and change-order claims for GCs, subs, owners and counsel",
+      "status": "ARCHIVED",
+      "score": 58,
+      "confidence": "MED",
+      "discovery_date": "2026-06-16T21:43:51Z",
+      "last_reviewed": "2026-06-16T21:44:06Z",
+      "related": [],
+      "research_files": [
+        "research/archived/OPP-2026-007-construction-delay-and-change-order-claim-defense-.md",
+        "research/TASK-0022-construction-delay-claim-defense.md"
+      ],
+      "reasoning": "Legacy OPP-006. 58 ARCHIVE (ADR-017); both wedges owned and productized: capture (Procore Change-Orders + Groundbreak-2025 AI agents + P6), recovery (SmartPM court-ready + forensic bench). 6th cap. Detail: research/TASK-0022-construction-delay-claim-defense.md",
+      "similarity": {
+        "problem": "",
+        "customer": "",
+        "workflow": "",
+        "economics": "",
+        "solution": "",
+        "market": ""
+      }
+    },
+    {
+      "id": "OPP-2026-008",
+      "name": "Legacy industrial control-system logic comprehension and documentation",
+      "industry": "Industrial OT / controls-engineering",
+      "problem_category": "Comprehend and document undocumented legacy PLC, SCADA and DCS control logic when the original integrator is gone, for asset-heavy operators",
+      "status": "ARCHIVED",
+      "score": 54,
+      "confidence": "HIGH",
+      "discovery_date": "2026-06-16T21:43:52Z",
+      "last_reviewed": "2026-06-16T21:44:07Z",
+      "related": [],
+      "research_files": [
+        "research/archived/OPP-2026-008-legacy-industrial-control-system-logic-comprehensi.md",
+        "research/TASK-0023-legacy-plc-control-logic-comprehension.md"
+      ],
+      "reasoning": "Legacy OPP-007. 54 ARCHIVE (ADR-018); first deliberately un-seeded pick, capped anyway. Owned: comprehension (Copia AI/Copilot 16.4M Series A) + capture (Octoplant/SDA). Failure mode is the archetype -> strip-out-the-AI screen. Detail: research/TASK-0023-legacy-plc-control-logic-comprehension.md",
+      "similarity": {
+        "problem": "",
+        "customer": "",
+        "workflow": "",
+        "economics": "",
+        "solution": "",
+        "market": ""
+      }
+    },
+    {
+      "id": "OPP-2026-009",
+      "name": "Specialty-insurance MGA for Li-ion and BESS commercial fire risk",
+      "industry": "Specialty insurance / energy MGA",
+      "problem_category": "Underwrite and place emerging hard-to-place lithium-ion and battery-energy-storage commercial fire risk via an MGA owning distribution, the underwriting transaction, and accruing loss data",
+      "status": "ARCHIVED",
+      "score": 58,
+      "confidence": "HIGH",
+      "discovery_date": "2026-06-16T21:43:53Z",
+      "last_reviewed": "2026-06-16T21:44:08Z",
+      "related": [],
+      "research_files": [
+        "research/archived/OPP-2026-009-specialty-insurance-mga-for-li-ion-and-bess-commer.md",
+        "research/TASK-0024-bess-specialty-insurance-mga.md"
+      ],
+      "reasoning": "Legacy OPP-008. 58 ARCHIVE (ADR-019); first OWNED-POSITION play, passed strip-out-the-AI screen but capped at vacuum check: NARDAC/Amwins 50M 8 Lloyds syndicates + Travelers + BikeInsure; market softening into 2026; AI underwriting commoditized; loss-data moat is cold-start; needs regulated capital. 8th cap; passing ADR-018 necessary NOT sufficient. Detail: research/TASK-0024-bess-specialty-insurance-mga.md",
+      "similarity": {
+        "problem": "",
+        "customer": "",
+        "workflow": "",
+        "economics": "",
+        "solution": "",
+        "market": ""
+      }
+    }
+  ]
 }

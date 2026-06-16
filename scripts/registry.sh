@@ -102,9 +102,9 @@ _(fill per prompts/opportunity-engine.md: affected customer, current solution, p
 economic impact \$/yr, competitive landscape, AI applicability, risks, pricing, business model)_
 
 ## Scoring (0–100)
-| Pain20 | Spend20 | Freq15 | AI15 | CompWk15 | Defens15 | Total |
-|--------|---------|--------|------|----------|----------|-------|
-|        |         |        |      |          |          | $score |
+| Pain25 | Spend20 | Freq15 | CompWk15 | Defens15 | AI10 | Total |
+|--------|---------|--------|----------|----------|------|-------|
+|        |         |        |          |          |      | $score |
 
 ## Similarity keys (for future dedup)
 - Problem: 

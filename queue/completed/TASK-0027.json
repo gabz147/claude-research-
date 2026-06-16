@@ -1,0 +1,21 @@
+{
+  "id": "TASK-0027",
+  "priority": "MED",
+  "status": "COMPLETED",
+  "description": "Reconcile authoritative opportunity registry: backfill all 9 evaluated opportunities (OPP-001..008 + OPP-001b) into opportunity_registry.json via registry.sh add, link existing research files, reindex INDEX.md. Fixes binding-rule violation: registry was empty so dedup checkpoint non-functional and mandated reindex would wipe hand-maintained INDEX.md.",
+  "dependencies": [],
+  "created": "2026-06-16T21:42:14Z",
+  "updated": "2026-06-16T21:48:46Z",
+  "owner": "Reviewer",
+  "confidence": "HIGH",
+  "effort": "M",
+  "acceptance": [
+    "opportunity_registry.json contains all 9 evaluated opportunities (was empty)",
+    "registry.sh search returns hits for prior sectors (dedup checkpoint functional)",
+    "each backfilled record links its existing research/TASK-*.md detail file",
+    "research/INDEX.md regenerated from the registry (no longer hand-maintained), all 9 present",
+    "OPPORTUNITIES.md carries a legacy-id -> OPP-YYYY-NNN crosswalk",
+    "scripts/verify_cycle.sh PASS"
+  ],
+  "notes": "Stabilization/handoff-integrity cycle (cf. ADR-016). Registry was initialized 2026-06-01 and never populated; org used hand-maintained OPPORTUNITIES.md + INDEX.md instead, violating the binding research-dedup rule and leaving a landmine where a mandated registry.sh reindex would overwrite INDEX.md with an empty index."
+}

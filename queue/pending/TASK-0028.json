@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0028",
+  "priority": "LOW",
+  "status": "PENDING",
+  "description": "Add a registry-drift detector to scripts/verify_cycle.sh: warn (or fail) when an opportunity referenced in research/OPPORTUNITIES.md or research/TASK-*.md is absent from opportunity_registry.json, so the memory substrate can't silently diverge from the hand-maintained ledger again (root cause behind ADR-022/TASK-0027).",
+  "dependencies": [],
+  "created": "2026-06-16T21:48:46Z",
+  "updated": "2026-06-16T21:48:46Z",
+  "owner": "Researcher",
+  "confidence": "MED",
+  "effort": "M",
+  "notes": ""
+}
