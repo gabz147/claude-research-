@@ -16,3 +16,7 @@ state/*.lock
 
 # Stray external symlinks (not part of repo memory)
 cr-bot
+
+# Python
+__pycache__/
+*.pyc
