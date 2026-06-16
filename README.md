@@ -60,6 +60,38 @@ automation/install.sh
 
 `doctor.sh` validates local dependencies and configuration. `supervisor.sh --dry` checks the automation path without launching Claude. `supervisor.sh --once` runs a real cycle. `automation/install.sh` installs the user-level systemd timer.
 
+## Operating the Live Loop (start / pause / resume / stop)
+
+The live bot runs as a self-restarting loop in the tmux session `claude-research-afk` (driven by `automation/afk_window.sh`), with `state/PAUSED` as the kill switch.
+
+- **Start / Resume** — begin (or resume after a pause) autonomous cycles. The script auto-clears `state/PAUSED` on start, so resuming is just running it again:
+
+  ```bash
+  tmux new-session -d -s claude-research-afk "bash /home/tar/claude-research-bot/automation/afk_window.sh"
+  ```
+
+- **Pause** (graceful) — the current cycle finishes, then the loop idles and starts no new cycles; the supervisor also refuses to start while this file exists:
+
+  ```bash
+  touch /home/tar/claude-research-bot/state/PAUSED
+  ```
+
+  Deleting `state/PAUSED` alone does **not** relaunch a stopped loop — re-run the Start command.
+
+- **Stop** (hard) — pause and kill the loop, interrupting any running cycle:
+
+  ```bash
+  touch /home/tar/claude-research-bot/state/PAUSED && tmux kill-session -t claude-research-afk
+  ```
+
+- **Status / one-off:**
+
+  ```bash
+  tmux ls                                    # is the loop alive?
+  tail -f /home/tar/claude-research-bot/logs/afk_window.log
+  scripts/supervisor.sh --once               # run a single cycle now (ignores backoff)
+  ```
+
 ## Usage Limits & Resets
 
 When Claude's usage/session limit is hit, the bot backs off until the quota resets, then resumes automatically. To check the exact reset time:
