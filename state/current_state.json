@@ -16,12 +16,12 @@
     "TASK-0001"
   ],
   "failed_tasks": [],
-  "last_execution": "2026-05-31T11:45:27Z",
+  "last_execution": "2026-06-16T18:40:15Z",
   "last_report": "REPORT.md",
   "confidence": "HIGH",
   "next_action": "Run scripts/doctor.sh then scripts/supervisor.sh --once",
   "recovery_status": "CLEAN",
   "consecutive_failures": 0,
-  "usage_limit_until": null,
+  "usage_limit_until": "2026-06-16T21:20:00Z",
   "lock_held": false
 }
