@@ -61,3 +61,11 @@
 **Alternatives:** Re-run the whole 19-repo pass (rejected — wasteful, ADR-007 stands); adopt agentmemory/ruflo infra wholesale (rejected — ≫ single-worker need, violates ADR-001/005 lean-memory stance).
 **Tradeoffs:** One new rule, one new skill, edits to the opportunity scoring contract. Accepted — additive, no existing functionality removed.
 **Consequences:** Opportunity scoring now gates on the gap before the total; evidence-graph should be run before 80+ promotions; bootstrap reads the new rule automatically (rules/ dir). External contributor pass (claude-opus-4-8) — the live autonomous loop may reconcile NEXT_ACTION/STATUS on its next cycle.
+
+---
+### ADR-009 — Formalize loop design and add evaluator gates (2026-06-16)
+**Decision:** Treat the existing system as an explicit loop: goal -> act -> verify -> update state -> repeat. Keep the single-worker supervisor architecture, but add a separate evaluator gate before task closure.
+**Reasoning:** The repo already has scheduler, durable memory, queue, skills, Discord observability, and bounded cycle semantics. The weak spot is that verification is mostly prompt-level. Closing work should depend on objective checks, not worker self-assessment.
+**Alternatives:** Add full multi-agent orchestration now (rejected — too much machinery before the single-worker loop is exhausted); leave verification entirely in prose prompts (rejected — too easy to skip under autonomous runs).
+**Tradeoffs:** More ceremony per task and one more script/checklist to maintain. Accepted because autonomous cycles need auditable stop conditions.
+**Consequences:** `docs/LOOP_DESIGN.md` records the mapping and implementation path. Add a task to introduce task acceptance fields plus a `scripts/verify_cycle.sh` gate before marking tasks complete.

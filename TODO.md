@@ -12,6 +12,7 @@
 | TASK-0004 | MED | PENDING | Evaluate claude-mem (github.com/thedotmack/claude-mem) as optional semantic retrieval layer | TASK-0001 | 2026-05-31 | 2026-05-31 | Researcher | MED | S |
 | TASK-0005 | MED | PENDING | Mine GSD agents/workflows for reusable research+planning patterns; fold useful ones into runtime.md | TASK-0001 | 2026-05-31 | 2026-05-31 | Reviewer | MED | M |
 | TASK-0006 | LOW | PENDING | Add Discord slash-command bot (/status /tasks /report /recover) as a separate supervised gateway | TASK-0002 | 2026-05-31 | 2026-05-31 | Builder | MED | M |
+| TASK-0013 | HIGH | PENDING | Add evaluator-loop gates: task acceptance fields, scripts/verify_cycle.sh, runtime completion rule | TASK-0002 | 2026-06-16 | 2026-06-16 | Reviewer | HIGH | M |
 
 ## Backlog (unscheduled ideas)
 - Weekly rollup report → #📅-daily-report.

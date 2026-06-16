@@ -13,12 +13,14 @@
 | 7. Recovery & restart | `scripts/supervisor.sh` (lock/backoff) + systemd + `recovery/RECOVERY.md` |
 | 8. Autonomous planning | runtime.md Autonomous Research Mode (self-fills the queue) |
 | 9. Continuous improvement | runtime.md step 6 (file one improvement task per cycle) |
+| 10. Loop design | `docs/LOOP_DESIGN.md` maps goal -> act -> verify -> update -> repeat and defines the evaluator-loop upgrade |
 
 ## Why this shape
 - **Files as memory** → reconstructable, auditable, diffable, survives everything. (ADR-001)
 - **One cycle = one bounded unit** → fits inside session/usage limits; many small cycles compound.
 - **Supervisor is dumb and durable** → the intelligence is in Claude + the prompts; the supervisor only guarantees *single-flight, backoff, logging, heartbeat*.
 - **Two-prompt split** → `bootstrap.md` reconstructs (cheap, deterministic), `runtime.md` works (open-ended). A fresh instance is productive without prior chat.
+- **Evaluator gates before closure** → the worker may generate work, but tasks should close only after objective checks pass or fail with recorded notes.
 
 ## State machine (a cycle)
 ```
