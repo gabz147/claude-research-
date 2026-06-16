@@ -22,7 +22,7 @@ while [ "$(date -u +%s)" -lt "$END" ]; do
   say "supervisor returned rc=$?"
   now=$(date -u +%s); rem=$(( END - now ))
   [ "$rem" -le 0 ] && break
-  nap=3600
+  nap="${ARO_CYCLE_GAP_SECONDS:-600}"   # breather between cycles (default 10m; was hourly 3600). usage-limit backoff overrides below.
   until_ts="$(jq -r '.usage_limit_until // empty' "$ROOT/state/current_state.json" 2>/dev/null)"
   if [ -n "$until_ts" ]; then
     until_s="$(date -u -d "$until_ts" +%s 2>/dev/null || echo 0)"
