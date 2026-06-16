@@ -20,8 +20,7 @@
     "TASK-0011",
     "TASK-0017",
     "TASK-0020",
-    "TASK-0021",
-    "TASK-0025"
+    "TASK-0021"
   ],
   "completed_tasks": [
     "TASK-0001",
@@ -34,13 +33,14 @@
     "TASK-0019",
     "TASK-0022",
     "TASK-0023",
-    "TASK-0024"
+    "TASK-0024",
+    "TASK-0025"
   ],
   "failed_tasks": [],
   "last_execution": "2026-06-16T18:52:07Z",
   "last_report": "REPORT.md",
   "confidence": "HIGH",
-  "next_action": "Execute TASK-0025 before another discovery cycle: implement evaluator-loop gates (acceptance fields, scripts/verify_cycle.sh, runtime completion rule).",
+  "next_action": "Continue net-new discovery under ADR-018/ADR-015/ADR-019 now that TASK-0025 evaluator gates are implemented. Run scripts/verify_cycle.sh before task closure.",
   "recovery_status": "CLEAN",
   "consecutive_failures": 0,
   "usage_limit_until": "2026-06-16T19:52:11Z",

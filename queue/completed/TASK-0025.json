@@ -1,0 +1,21 @@
+{
+  "id": "TASK-0025",
+  "priority": "HIGH",
+  "status": "COMPLETED",
+  "description": "Add evaluator-loop gates: task acceptance fields, scripts/verify_cycle.sh, runtime completion rule",
+  "dependencies": [
+    "TASK-0002"
+  ],
+  "created": "2026-06-16T19:05:00Z",
+  "updated": "2026-06-16T19:22:36Z",
+  "owner": "Reviewer",
+  "confidence": "HIGH",
+  "effort": "M",
+  "acceptance": [
+    "New tasks can carry explicit acceptance criteria without breaking scripts/task.sh list/move/show.",
+    "A repo-level verifier script checks JSON validity, required handoff files, task queue consistency, and no obvious tracked secret in the current diff.",
+    "prompts/runtime.md requires running the verifier or recording why it does not apply before moving a task to completed.",
+    "docs/LOOP_DESIGN.md remains the source note for the loop mapping and autonomy levels."
+  ],
+  "notes": "Implements ADR-020. Keep the first pass shell/jq-native; do not add multi-agent orchestration yet."
+}
