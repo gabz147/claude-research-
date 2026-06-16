@@ -36,6 +36,8 @@ journalctl --user -u claude-research-bot.service -f
 sudo loginctl enable-linger "$USER"
 ```
 
+The service includes a systemd filesystem sandbox. If Claude needs another persistent writable directory, add it to `ReadWritePaths` in `automation/claude-research-bot.service` and reinstall the unit.
+
 ### Alternative: cron
 ```bash
 crontab automation/crontab.example

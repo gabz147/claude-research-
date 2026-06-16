@@ -14,16 +14,27 @@ LOG_DIR="$ROOT/logs"
 LOG_FILE="$LOG_DIR/aro.log"
 mkdir -p "$LOG_DIR"
 
-# Load secrets from config/.env (KEY=VALUE, ignore comments/blanks)
+# Load secrets from config/.env (KEY=VALUE, ignore comments/blanks).
 load_env() {
   [ -f "$ENV_FILE" ] || return 0
-  set -a
-  # shellcheck disable=SC1090
+  local line key value
   while IFS= read -r line; do
     case "$line" in ''|\#*) continue ;; esac
-    export "$line"
+    case "$line" in
+      *=*)
+        key="${line%%=*}"
+        value="${line#*=}"
+        if printf '%s' "$key" | grep -Eq '^[A-Za-z_][A-Za-z0-9_]*$'; then
+          export "$key=$value"
+        else
+          log WARN "load_env: ignoring invalid key in $ENV_FILE: $key"
+        fi
+        ;;
+      *)
+        log WARN "load_env: ignoring malformed line in $ENV_FILE"
+        ;;
+    esac
   done < "$ENV_FILE"
-  set +a
 }
 
 iso_now() { date -u +%Y-%m-%dT%H:%M:%SZ; }
@@ -41,7 +52,7 @@ state_get() { jq -r "$1 // empty" "$STATE_FILE" 2>/dev/null; }
 # Atomic: write temp then mv.
 state_set() {
   local expr="$1" tmp
-  tmp="$(mktemp)"
+  tmp="$(mktemp "${STATE_FILE}.tmp.XXXXXX")"
   if jq "$expr" "$STATE_FILE" > "$tmp" 2>/dev/null; then
     mv "$tmp" "$STATE_FILE"
   else
