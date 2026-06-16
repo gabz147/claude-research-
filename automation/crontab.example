@@ -3,5 +3,5 @@
 # Runs every hour at :07. supervisor.sh holds a lock, so overlaps are safe.
 # @reboot line gives a quick post-boot kick.
 
-@reboot       sleep 120 && /home/tar/claude-research-bot/scripts/supervisor.sh >> /home/tar/claude-research-bot/logs/cron.log 2>&1
-7 * * * *     /home/tar/claude-research-bot/scripts/supervisor.sh >> /home/tar/claude-research-bot/logs/cron.log 2>&1
+@reboot       sleep 120 && /home/gabrielmarquez147/claude-research-work/scripts/supervisor.sh >> /home/gabrielmarquez147/claude-research-work/logs/cron.log 2>&1
+7 * * * *     /home/gabrielmarquez147/claude-research-work/scripts/supervisor.sh >> /home/gabrielmarquez147/claude-research-work/logs/cron.log 2>&1

@@ -12,7 +12,7 @@ chmod 600 config/.env
 
 ## 2. Health check
 ```bash
-cd /home/tar/claude-research-bot
+cd /home/gabrielmarquez147/claude-research-work
 scripts/doctor.sh
 ```
 Expect all ✅ and `FAIL=0`. Fixes:

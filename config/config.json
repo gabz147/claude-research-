@@ -1,6 +1,6 @@
 {
   "project": "claude-research-bot",
-  "root": "/home/tar/claude-research-bot",
+  "root": "/home/gabrielmarquez147/claude-research-work",
   "cycle": {
     "interval_minutes": 60,
     "max_runtime_seconds": 3000,
