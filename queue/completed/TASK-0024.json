@@ -1,0 +1,13 @@
+{
+  "id": "TASK-0024",
+  "priority": "HIGH",
+  "status": "DONE",
+  "description": "Net-new discovery (first OWNED-POSITION play, ADR-018-compliant): specialty-insurance MGA/program for emerging hard-to-place lithium-ion / BESS commercial fire risk. MGA owns distribution + underwriting transaction + accruing loss data; AI = underwriting tool. Run ADR-018 strip-out-the-AI screen FIRST, then both-sides vacuum check, then score.",
+  "dependencies": [],
+  "created": "2026-06-16T18:00:00Z",
+  "updated": "2026-06-16T18:40:00Z",
+  "owner": "Researcher",
+  "confidence": "HIGH",
+  "effort": "M",
+  "notes": "OPP-008 scored 58/100 -> ARCHIVE. PASSED the ADR-018 strip-out-the-AI screen (first candidate to do so -- genuine owned position) but capped at the second-stage vacuum check: placement wedge owned by NARDAC/Amwins ($50M, 8 Lloyd's syndicates, since Mar-2024) + Travelers + BikeInsure; market softening into 2026 (capacity returning); AI underwriting commoditized (hyperexponential/Earnix/Federato); loss-data moat is a cold-start that accrues to incumbents; MGA needs regulated binding authority/capital. 8th consecutive cap. Load-bearing meta -> ADR-019: passing ADR-018 is necessary NOT sufficient; add a 3rd-stage owned-position filter -- (a) durable (not cyclical/hard-market) vacuum, (b) zero-state-originable moat (not cold-start), (c) buildable without heavy regulated capital."
+}
