@@ -51,6 +51,7 @@ CHANNEL_COLORS = {
     "alerts": 15158332,
     "daily": 5265274,
 }
+WINNER_COLOR = 15844367  # gold — promoted "winner" opportunities (score >= 80)
 
 
 def iso_now() -> str:
@@ -372,6 +373,71 @@ def command_discord_payload(args: argparse.Namespace) -> int:
     return 0
 
 
+def winner_payload(
+    name: str,
+    pitch: str = "",
+    score: str = "",
+    industry: str = "",
+    confidence: str = "",
+    status: str = "",
+    why: str = "",
+    nxt: str = "",
+    opp_id: str = "",
+    image_name: str = "",
+) -> dict[str, Any]:
+    """A distinct gold card for a winner (an opportunity that cleared the gate)."""
+    title = truncate(("🏆 WINNER — " + name).strip(), 240)
+    fields: list[dict[str, Any]] = []
+    if score:
+        fields.append({"name": "Score", "value": truncate(str(score), 256), "inline": True})
+    if confidence:
+        fields.append({"name": "Confidence", "value": truncate(confidence, 256), "inline": True})
+    if status:
+        fields.append({"name": "Status", "value": truncate(status, 256), "inline": True})
+    if industry:
+        fields.append({"name": "Industry", "value": truncate(industry, 1024), "inline": False})
+    if why:
+        fields.append({"name": "Why it wins", "value": truncate(why, 1024), "inline": False})
+    if nxt:
+        fields.append({"name": "Next step", "value": truncate(nxt, 1024), "inline": False})
+    footer = "claude-research-bot"
+    if opp_id:
+        footer += " • " + opp_id
+    footer += " • repo remains source of truth"
+    embed: dict[str, Any] = {
+        "title": title,
+        "description": truncate(pitch or "A validated opportunity cleared the stage gates.", 4000),
+        "color": WINNER_COLOR,
+        "fields": fields,
+        "footer": {"text": footer},
+        "timestamp": iso_now(),
+    }
+    if image_name:
+        embed["image"] = {"url": f"attachment://{image_name}"}
+    return {"embeds": [embed]}
+
+
+def command_winner_payload(args: argparse.Namespace) -> int:
+    print(
+        json.dumps(
+            winner_payload(
+                name=args.name,
+                pitch=args.pitch,
+                score=args.score,
+                industry=args.industry,
+                confidence=args.confidence,
+                status=args.status,
+                why=args.why,
+                nxt=args.next,
+                opp_id=args.id,
+                image_name=args.image_name,
+            ),
+            ensure_ascii=False,
+        )
+    )
+    return 0
+
+
 def queue_counts(root: Path) -> dict[str, int]:
     return {state: len(task_files(root, state)) for state in QUEUE_STATES}
 
@@ -449,6 +515,18 @@ def build_parser() -> argparse.ArgumentParser:
     payload.add_argument("--image-name", default="")
     payload.add_argument("message", nargs=argparse.REMAINDER)
 
+    winner = sub.add_parser("winner-payload")
+    winner.add_argument("--name", required=True)
+    winner.add_argument("--pitch", default="")
+    winner.add_argument("--score", default="")
+    winner.add_argument("--industry", default="")
+    winner.add_argument("--confidence", default="")
+    winner.add_argument("--status", default="")
+    winner.add_argument("--why", default="")
+    winner.add_argument("--next", default="")
+    winner.add_argument("--id", default="")
+    winner.add_argument("--image-name", default="")
+
     report = sub.add_parser("report-summary")
     report.add_argument("--write")
 
@@ -468,6 +546,8 @@ def main(argv: list[str] | None = None) -> int:
             return command_verify_cycle(args)
         if args.command == "discord-payload":
             return command_discord_payload(args)
+        if args.command == "winner-payload":
+            return command_winner_payload(args)
         if args.command == "report-summary":
             return command_report_summary(args)
         if args.command == "research-index":

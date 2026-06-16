@@ -35,6 +35,8 @@ Follow the methodology strictly:
 8. **Confidence** — HIGH / MEDIUM / LOW, justified.
 
 **Then apply the opportunity engine:** fill `templates/OPPORTUNITY.md`, **score 0–100** across the 6 dimensions, **register it via `scripts/registry.sh add --name … --industry … --problem … --score N --status … --reasoning …`** (mints the permanent `OPP-YYYY-NNN` id, files the record under `research/<state>/`, updates the authoritative registry + `research/INDEX.md`), and apply the **stage gate** (<70 archive · 70–79 monitor · 80–89 → create project + validation artifacts · 90+ → execution project). Post the scored thesis to `#🏆-opportunities`.
+**Winner highlight:** when the scored opportunity clears the gate (score ≥ 80 — promoted to a project or execution candidate), announce it as a WINNER so it stands out from routine archives: `scripts/announce_winner.sh --name "<title>" --score N --industry "<sector>" --confidence <HIGH|MED|LOW> --status <VALIDATED|EXECUTION_CANDIDATE> --id <OPP-id> --pitch "<one-line thesis>" --why "<why it wins>" --next "<next gate>"` (posts a distinct gold card to `#🏆-opportunities`; sub-70 archive/monitor results stay on the plain ledger post).
+
 Fill the record `scripts/registry.sh` created under `research/<state>/<OPP-id>-<slug>.md` with the full discovery record; add a row to `RESEARCH.md`; update `research/market_maps/<sector>.md`; promote durable knowledge into `knowledge/`. As state advances (validate/build), call `scripts/registry.sh update <OPP-id> --status <STATE>`.
 
 ### Project-advance mode (score ≥80)
