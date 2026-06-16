@@ -22,8 +22,14 @@ while [ "$(date -u +%s)" -lt "$END" ]; do
   say "supervisor returned rc=$?"
   now=$(date -u +%s); rem=$(( END - now ))
   [ "$rem" -le 0 ] && break
-  nap=3600; [ "$rem" -lt "$nap" ] && nap="$rem"
-  say "sleeping ${nap}s (until next tick or deadline)"
+  nap=3600
+  until_ts="$(jq -r '.usage_limit_until // empty' "$ROOT/state/current_state.json" 2>/dev/null)"
+  if [ -n "$until_ts" ]; then
+    until_s="$(date -u -d "$until_ts" +%s 2>/dev/null || echo 0)"
+    [ "$until_s" -gt "$now" ] && nap=$(( until_s - now + 5 ))   # wake at the exact reset, not a flat hour
+  fi
+  [ "$rem" -lt "$nap" ] && nap="$rem"
+  say "sleeping ${nap}s (until reset/next tick or deadline)"
   sleep "$nap"
 done
 

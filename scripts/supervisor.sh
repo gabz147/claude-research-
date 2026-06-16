@@ -82,8 +82,23 @@ set -e 2>/dev/null || true
 
 # ---- interpret result ---------------------------------------------------
 if grep -qiE 'usage limit|rate.?limit|reached your (usage|limit)|too many requests|session limit|hit your .*limit|limit .*reset|overloaded|quota' "$RUN_LOG"; then
-  back="$(cfg_get '.limits.usage_limit_backoff_minutes')"; back="${back:-60}"
-  until_ts="$(date -u -d "+${back} minutes" +%Y-%m-%dT%H:%M:%SZ)"
+  # Prefer the EXACT reset time Claude prints, e.g. "resets 2:20am (UTC)".
+  rt="$(grep -oiE "resets[[:space:]]+[0-9]{1,2}:[0-9]{2}[[:space:]]*(am|pm)?" "$RUN_LOG" | tail -1 | grep -oiE "[0-9]{1,2}:[0-9]{2}[[:space:]]*(am|pm)?")"
+  now_s="$(date -u +%s)"
+  if [ -n "$rt" ] && reset_s="$(TZ=UTC date -u -d "$rt" +%s 2>/dev/null)" && [ -n "$reset_s" ]; then
+    if [ "$reset_s" -le "$now_s" ]; then                       # printed clock time already passed today
+      if [ "$(( now_s - reset_s ))" -gt 21600 ]; then          # >6h past => genuine next-day (am) reset
+        reset_s="$(TZ=UTC date -u -d "tomorrow $rt" +%s)"
+      else reset_s=$(( now_s + 120 )); fi                       # only just passed (parse lag) => usage back now
+    fi
+    reset_s=$(( reset_s + 90 ))                                                          # small buffer past boundary
+    until_ts="$(date -u -d "@$reset_s" +%Y-%m-%dT%H:%M:%SZ)"
+    log INFO "supervisor: parsed exact reset ('$rt' UTC) -> $until_ts"
+  else
+    back="$(cfg_get '.limits.usage_limit_backoff_minutes')"; back="${back:-60}"
+    until_ts="$(date -u -d "+${back} minutes" +%Y-%m-%dT%H:%M:%SZ)"
+    log WARN "supervisor: reset time unparseable; fallback +${back}m -> $until_ts"
+  fi
   state_set ".usage_limit_until=\"$until_ts\""
   log WARN "supervisor: usage limit hit; backing off until $until_ts"
   notify alerts "⏳ Usage limit hit. Backing off until **$until_ts**. Will auto-resume."
