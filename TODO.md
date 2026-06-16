@@ -15,7 +15,8 @@
 | TASK-0004 | MED | PENDING | Evaluate claude-mem (github.com/thedotmack/claude-mem) as optional semantic retrieval layer | TASK-0001 | 2026-05-31 | 2026-05-31 | Researcher | MED | S |
 | TASK-0005 | MED | PENDING | Mine GSD agents/workflows for reusable research+planning patterns; fold useful ones into runtime.md | TASK-0001 | 2026-05-31 | 2026-05-31 | Reviewer | MED | M |
 | TASK-0006 | LOW | PENDING | Add Discord slash-command bot (/status /tasks /report /recover) as a separate supervised gateway | TASK-0002 | 2026-05-31 | 2026-05-31 | Builder | MED | M |
-| TASK-0012 | LOW | PENDING | Reconcile stale scoring weights: templates/OPPORTUNITY.md + skills/opportunity-research/SKILL.md still show old Pain20/AI15; update to ADR-008 (Pain25/AI10) | — | 2026-06-15 | 2026-06-15 | Reviewer | HIGH | S |
+| TASK-0012 | LOW | DONE | Reconciled stale scoring weights in templates/OPPORTUNITY.md + skills/opportunity-research/SKILL.md to ADR-008 (Pain25 Spend20 Freq15 CompWk15 Defens15 AI10). ADR-012 | — | 2026-06-15 | 2026-06-16 | Reviewer | HIGH | S |
+| TASK-0015 | HIGH | DONE | Net-new discovery → OPP-002 PFAS liability record-reconstruction scored **71 → MONITOR** (not promoted; entrenched forensic incumbents, reporting slipped to 2027). ADR-012, research/TASK-0015-pfas-liability-reconstruction.md | — | 2026-06-16 | 2026-06-16 | Researcher | MED | M |
 
 > Note: TASK-0007–0011 (from ADR-007 integration) exist in `queue/pending/` but are not yet mirrored into this table — run `scripts/task.sh list` for the authoritative set; backfill on next maintenance cycle.
 

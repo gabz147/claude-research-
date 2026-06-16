@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "project": "claude-research-bot",
-  "current_objective": "Project 01 (IRA PWA audit-defense, OPP-001b, score 83) completed VALIDATION MODE -> verdict HOLD (not disproved, not HIGH-confirmed). The two load-bearing commercial questions (WTP vs law firms; real IRS audit-notice volume) are unresolvable by desk research and require operator-gated primary discovery (TASK-0014). With the leading project blocked on operator input and no other >=80 project, the funnel resumes net-new discovery next cycle.",
-  "current_phase": "PHASE 2 -> bridge to PHASE 1. Project 01 in VALIDATION HOLD (operator-gated). Next autonomous cycle = net-new opportunity discovery (runtime priority 3).",
+  "current_objective": "Net-new discovery cycle (runtime priority 3, project 01 operator-gated): scored OPP-002 (PFAS liability record-reconstruction & PRP/litigation-defense, CERCLA PFOA/PFOS + TSCA 8(a)(7)) at 71/100 -> MONITOR, NOT promoted. Disprove pass capped it: entrenched forensic incumbents (Exponent/ERM/WSP/Battelle) already sell the record-reconstruction capability (no productization vacuum, unlike OPP-001b) and the TSCA reporting forcing-function slipped to 2027. Also closed TASK-0012 (reconciled stale scoring rubric to ADR-008). Still no 2nd >=80 project; project 01 still HOLD/operator-gated.",
+  "current_phase": "PHASE 1 (discovery). Project 01 in VALIDATION HOLD (operator-gated, TASK-0014). Funnel continues net-new opportunity discovery next cycle in a fresh sector.",
   "current_task": null,
   "active_research": null,
   "leading_project": "01-ira-audit-defense",
@@ -17,19 +17,20 @@
     "TASK-0008",
     "TASK-0009",
     "TASK-0010",
-    "TASK-0011",
-    "TASK-0012"
+    "TASK-0011"
   ],
   "completed_tasks": [
     "TASK-0001",
     "TASK-0003",
-    "TASK-0013"
+    "TASK-0012",
+    "TASK-0013",
+    "TASK-0015"
   ],
   "failed_tasks": [],
-  "last_execution": "2026-06-16T00:58:30Z",
+  "last_execution": "2026-06-16T02:07:08Z",
   "last_report": "REPORT.md",
   "confidence": "HIGH",
-  "next_action": "Project 01 is VALIDATION HOLD, operator-gated (TASK-0014 = primary discovery). Next autonomous cycle: resume NET-NEW discovery of a fresh >=80 opportunity (runtime priority 3) rather than idle. Also low-priority maintenance TASK-0012 (stale rubric in template+skill). See NEXT_ACTION.md.",
+  "next_action": "Project 01 still VALIDATION HOLD, operator-gated (TASK-0014). Next autonomous cycle: continue NET-NEW discovery (runtime priority 3) in a FRESH sector — apply the OPP-002 learning: prefer regimes with a PRODUCTIZATION VACUUM, not just severe pain. Do NOT re-desk-validate project 01. See NEXT_ACTION.md.",
   "recovery_status": "CLEAN",
   "consecutive_failures": 0,
   "usage_limit_until": null,

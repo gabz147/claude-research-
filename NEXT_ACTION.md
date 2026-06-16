@@ -4,15 +4,15 @@
 
 ## Do this next
 
-**Context:** Project 01 (`projects/01-ira-audit-defense/`) finished VALIDATION MODE this cycle → verdict **HOLD** (ADR-011). Desk research did **not** disprove the bet, but **cannot** raise it to HIGH: willingness-to-pay vs law firms and real IRS audit-notice volume require **primary discovery the autonomous org cannot perform**. The project is therefore **operator-gated** (TASK-0014). It is **not** archived and **not** advancing to BUSINESS_MODEL until that primary evidence exists.
+**Context:** This cycle ran net-new discovery (TASK-0015) → **OPP-002 (PFAS liability record-reconstruction)** scored **71 → MONITOR**, not promoted (ADR-012): real existential pain but no productization vacuum (entrenched forensic incumbents) + reporting forcing-function slipped to 2027. Also closed TASK-0012 (rubric reconciled to ADR-008). Project 01 remains **VALIDATION HOLD, operator-gated** (TASK-0014). No second ≥80 project.
 
-**Action (autonomous worker):** Per runtime funnel priority — the leading project is blocked on operator input and there is no other ≥80 project, so do **NOT** idle and do **NOT** re-run desk validation on project 01. **Resume NET-NEW discovery (runtime §5 / priority 3):** pick a fresh sector, find + score one new Blue-Ocean B2B opportunity using `skills/opportunity-research/SKILL.md` and the ADR-008 rubric, applying the disprove discipline. If it scores ≥80, create `projects/02-<slug>/`; else log to the ledger (MONITOR/ARCHIVE).
+**Action (autonomous worker):** Per runtime funnel priority — leading project still operator-gated, no other ≥80 project → do **NOT** idle, do **NOT** re-desk-validate project 01. **Continue NET-NEW discovery (runtime §5 / priority 3)** in a **fresh sector** (do not re-run PFAS or IRA). Pick a sector and find + score one new Blue-Ocean B2B opportunity using `skills/opportunity-research/SKILL.md` + the ADR-008 rubric, with the disprove discipline. **Apply this cycle's learning:** prioritize regimes with a **productization vacuum** (a painful problem NO incumbent has productized — like OPP-001b), not merely severe pain (OPP-002 failed because deep-domain incumbents already owned the capability). If it scores ≥80 → create `projects/02-<slug>/`; else log to the ledger (MONITOR/ARCHIVE).
+
+**Candidate sectors to consider (un-vetted hints):** EU AI Act high-risk conformity/technical-documentation (Aug 2026 deadline), DORA ICT third-party risk register (EU financial), FDA §524B premarket medical-device cybersecurity (SBOM/threat-model), SEC off-channel-comms recordkeeping for RIAs — screen each for a *productization vacuum* first before deep research.
 
 **Operator actions outstanding (do NOT auto-do):**
-1. **TASK-0014** — primary discovery for project 01: 5–10 buyer/firm interviews (developer tax directors + Big-4/tax-controversy partners) to resolve WTP + compete-vs-channel; FOIA/TIGTA/§6418-dispute data for real audit cadence. This is the ONLY thing that unblocks project 01 → BUSINESS_MODEL.md.
+1. **TASK-0014** — primary discovery for project 01: 5–10 buyer/firm interviews (WTP + compete-vs-channel) + FOIA/TIGTA/§6418 data (real audit cadence). The ONLY thing that unblocks project 01 → BUSINESS_MODEL.md.
 2. **TASK-0002** — enable unattended systemd loop (`automation/install.sh`) — operator go-ahead required.
 3. Rotate Discord token (historically pasted in chat).
 
-**Optional low-effort maintenance:** TASK-0012 — fix stale ADR-008 rubric still shown in `templates/OPPORTUNITY.md` + `skills/opportunity-research/SKILL.md`.
-
-**Acceptance check:** Next cycle either (a) produces a new scored opportunity record in `research/` + a row in `research/OPPORTUNITIES.md` + RESEARCH.md (and a `projects/02-*/` if ≥80), or (b) completes TASK-0012; state files refreshed; Discord posted; committed. Do not re-validate project 01 by desk research — it is operator-gated.
+**Acceptance check:** Next cycle produces a new scored opportunity record in `research/` + a row in `research/OPPORTUNITIES.md` + RESEARCH.md (and a `projects/02-*/` if ≥80); state files refreshed; Discord posted; committed. Do not re-validate project 01 (operator-gated) and do not re-score OPP-002/IRA.

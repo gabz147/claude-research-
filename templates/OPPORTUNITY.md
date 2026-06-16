@@ -20,12 +20,12 @@
 ## SCORE
 | Dim | Max | Score | Justification |
 |---|---|---|---|
-| Pain Severity | 20 | | |
+| Pain Severity | 25 | | |
 | Buyer Spending Power | 20 | | |
 | Frequency | 15 | | |
-| AI Leverage | 15 | | |
 | Competitive Weakness | 15 | | |
 | Defensibility | 15 | | |
+| AI Leverage | 10 | | |
 | **Total** | **100** | | |
 
 **Gate decision:** <70 archive · 70–79 monitor · 80–89 validation · 90+ execution.
