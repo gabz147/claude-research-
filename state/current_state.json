@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "project": "claude-research-bot",
-  "current_objective": "Net-new discovery cycle (runtime priority 3, project 01 operator-gated): scored OPP-002 (PFAS liability record-reconstruction & PRP/litigation-defense, CERCLA PFOA/PFOS + TSCA 8(a)(7)) at 71/100 -> MONITOR, NOT promoted. Disprove pass capped it: entrenched forensic incumbents (Exponent/ERM/WSP/Battelle) already sell the record-reconstruction capability (no productization vacuum, unlike OPP-001b) and the TSCA reporting forcing-function slipped to 2027. Also closed TASK-0012 (reconciled stale scoring rubric to ADR-008). Still no 2nd >=80 project; project 01 still HOLD/operator-gated.",
-  "current_phase": "PHASE 1 (discovery). Project 01 in VALIDATION HOLD (operator-gated, TASK-0014). Funnel continues net-new opportunity discovery next cycle in a fresh sector.",
+  "current_objective": "Net-new discovery cycle (runtime priority 3, project 01 operator-gated): vacuum-SCREENED 4 sectors before deep research (applying ADR-012 learning) — rejected EU CBAM (10+ mature emissions-data vendors) and EU AI Act conformity (crowded AI-governance GRC) at the screen; deep-dived SEC cyber-incident materiality-determination & disclosure-defense (Item 1.05 + Reg S-K Item 106). Scored OPP-003 at 72/100 -> MONITOR, NOT promoted. Capped by: active Item-1.05 rescission risk under the current SEC (forcing-function at risk; partial mitigant = anti-fraud/disclosure-controls basis survives a 1.05 rollback, OPP-001b-style); forming competition (Kovrr CRQ + FAIR-MAM occupy 'materiality'); episodic frequency (24 Item-1.05 filings yr-1). Still no 2nd >=80 project; project 01 still HOLD/operator-gated. Meta-learning logged (TASK-0017): 3 consecutive 70s show public forcing-functions get productized within 1-2yrs.",
+  "current_phase": "PHASE 1 (discovery). Project 01 in VALIDATION HOLD (operator-gated, TASK-0014). Funnel continues net-new opportunity discovery next cycle in a fresh sector, biased per TASK-0017 heuristic.",
   "current_task": null,
   "active_research": null,
   "leading_project": "01-ira-audit-defense",
@@ -17,20 +17,22 @@
     "TASK-0008",
     "TASK-0009",
     "TASK-0010",
-    "TASK-0011"
+    "TASK-0011",
+    "TASK-0017"
   ],
   "completed_tasks": [
     "TASK-0001",
     "TASK-0003",
     "TASK-0012",
     "TASK-0013",
-    "TASK-0015"
+    "TASK-0015",
+    "TASK-0016"
   ],
   "failed_tasks": [],
-  "last_execution": "2026-06-16T02:07:08Z",
+  "last_execution": "2026-06-16T05:20:38Z",
   "last_report": "REPORT.md",
   "confidence": "HIGH",
-  "next_action": "Project 01 still VALIDATION HOLD, operator-gated (TASK-0014). Next autonomous cycle: continue NET-NEW discovery (runtime priority 3) in a FRESH sector — apply the OPP-002 learning: prefer regimes with a PRODUCTIZATION VACUUM, not just severe pain. Do NOT re-desk-validate project 01. See NEXT_ACTION.md.",
+  "next_action": "Project 01 still VALIDATION HOLD, operator-gated (TASK-0014). Next autonomous cycle: continue NET-NEW discovery (runtime priority 3) in a FRESH sector, biased per TASK-0017 heuristic — prefer (a) a regime whose forcing-function JUST landed (vacuum still open) or (b) a sharp defensive sub-wedge incumbents structurally can't serve (OPP-001b pattern). Do NOT re-run IRA/PFAS/CBAM/EU-AI-Act/SEC-cyber; do NOT re-desk-validate project 01. See NEXT_ACTION.md.",
   "recovery_status": "CLEAN",
   "consecutive_failures": 0,
   "usage_limit_until": null,
