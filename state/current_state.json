@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "project": "claude-research-bot",
-  "current_objective": "Net-new discovery cycle (runtime priority 3, project 01 operator-gated): vacuum-SCREENED 4 sectors before deep research (applying ADR-012 learning) — rejected EU CBAM (10+ mature emissions-data vendors) and EU AI Act conformity (crowded AI-governance GRC) at the screen; deep-dived SEC cyber-incident materiality-determination & disclosure-defense (Item 1.05 + Reg S-K Item 106). Scored OPP-003 at 72/100 -> MONITOR, NOT promoted. Capped by: active Item-1.05 rescission risk under the current SEC (forcing-function at risk; partial mitigant = anti-fraud/disclosure-controls basis survives a 1.05 rollback, OPP-001b-style); forming competition (Kovrr CRQ + FAIR-MAM occupy 'materiality'); episodic frequency (24 Item-1.05 filings yr-1). Still no 2nd >=80 project; project 01 still HOLD/operator-gated. Meta-learning logged (TASK-0017): 3 consecutive 70s show public forcing-functions get productized within 1-2yrs.",
-  "current_phase": "PHASE 1 (discovery). Project 01 in VALIDATION HOLD (operator-gated, TASK-0014). Funnel continues net-new opportunity discovery next cycle in a fresh sector, biased per TASK-0017 heuristic.",
+  "current_objective": "Net-new discovery cycle (runtime priority 3, project 01 operator-gated): applied TASK-0017 heuristic to pick EU Pay Transparency Directive (2023/970) — just-landed forcing-function (transposition 7 Jun 2026) + Art. 18 burden-of-proof reversal as a candidate defensive sub-wedge (per-decision pay-justification defense record). KILLED at the vacuum screen before deep research (ADR-012 discipline). Scored OPP-004 at 63/100 -> ARCHIVE (first Archived row). Disprove won: pay-equity analytics incumbents (Syndio PayEQ, beqom/PayAnalytics, Trusaic) already own 'defensible documentation' + are explicitly EU-PTD-positioned; HRIS/comp stack owns the point-of-decision workflow; enforcement staggered (DE/FR/NL/ES/Sweden -> 2027); directive telegraphed since 2023 so the 2026 effective date left no vacuum. 4th consecutive compliance-forcing-function to cap (79/71/72/63). Refined TASK-0017 (ADR-014): 'just-landed' must mean novel/surprising obligation, not recent effective date; 'pick the newest regulation' is itself becoming an anti-pattern -> next cycle leave regulatory-compliance OR pass an affirmative named-incumbent vacuum check first. Still no 2nd >=80 project; project 01 still HOLD/operator-gated.",
+  "current_phase": "PHASE 1 (discovery). Project 01 in VALIDATION HOLD (operator-gated, TASK-0014). Funnel continues net-new opportunity discovery next cycle in a fresh sector, applying the REFINED TASK-0017 heuristic (ADR-014).",
   "current_task": null,
   "active_research": null,
   "leading_project": "01-ira-audit-defense",
@@ -26,13 +26,14 @@
     "TASK-0012",
     "TASK-0013",
     "TASK-0015",
-    "TASK-0016"
+    "TASK-0016",
+    "TASK-0018"
   ],
   "failed_tasks": [],
-  "last_execution": "2026-06-16T05:20:38Z",
+  "last_execution": "2026-06-16T06:30:04Z",
   "last_report": "REPORT.md",
   "confidence": "HIGH",
-  "next_action": "Project 01 still VALIDATION HOLD, operator-gated (TASK-0014). Next autonomous cycle: continue NET-NEW discovery (runtime priority 3) in a FRESH sector, biased per TASK-0017 heuristic — prefer (a) a regime whose forcing-function JUST landed (vacuum still open) or (b) a sharp defensive sub-wedge incumbents structurally can't serve (OPP-001b pattern). Do NOT re-run IRA/PFAS/CBAM/EU-AI-Act/SEC-cyber; do NOT re-desk-validate project 01. See NEXT_ACTION.md.",
+  "next_action": "Project 01 still VALIDATION HOLD, operator-gated (TASK-0014). Next autonomous cycle: continue NET-NEW discovery (runtime priority 3), applying the REFINED TASK-0017 heuristic (ADR-014) — either (i) LEAVE regulatory-compliance entirely (operational/financial/contractual pain, clear high-ticket buyer, no dominant incumbent) OR (ii) only enter a compliance regime after passing an AFFIRMATIVE named-incumbent vacuum check (name the incumbents, show the specific artifact none of them sell). Do NOT re-run IRA/PFAS/CBAM/EU-AI-Act/SEC-cyber/EU-Pay-Transparency; do NOT re-desk-validate project 01. See NEXT_ACTION.md.",
   "recovery_status": "CLEAN",
   "consecutive_failures": 0,
   "usage_limit_until": null,
